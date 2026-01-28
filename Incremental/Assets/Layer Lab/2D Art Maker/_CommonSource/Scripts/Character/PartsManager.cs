@@ -821,6 +821,11 @@ namespace LayerLab.ArtMaker
             skeletonAnimation.AnimationState.SetAnimation(0, animationName, true);
         }
 
+        public void PlayAnimationOnce(string animationName)
+        {
+            skeletonAnimation.AnimationState.SetAnimation(0, animationName, false);
+        }
+
         #endregion
 
         #region Optimization

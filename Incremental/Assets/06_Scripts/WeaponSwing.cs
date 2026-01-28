@@ -119,6 +119,14 @@ public class WeaponSwing : MonoBehaviour
         swingSequence?.Kill();
     }
 
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<ICharacter>(out var character))
+        {
+            character.Reset();
+        }
+    }
+
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
