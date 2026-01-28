@@ -10,23 +10,23 @@ namespace LayerLab.ArtMaker
     {
         [field: SerializeField] private PartsListSlot PartsListSlot { get; set; }
         private readonly List<PartsListSlot> _activePartsList = new();
-        
+
         [SerializeField] private TMP_Text textTitle;
         [SerializeField] private Transform contentParent;
         [SerializeField] private ColorPicker colorPicker;
         [SerializeField] private GameObject objButtonReset;
         [SerializeField] private Image imgSelectFrame;
-        
+
         private bool IsShow => gameObject.activeSelf;
         private RectTransform _rect;
         private PartsType _activePartsType;
         private Vector3 _targetPos;
         private Vector3 _startPos;
         private Vector3 _velocity = Vector3.zero;
-        
-        
+
+
         #region Public
-        
+
         /// <summary>
         /// 초기화
         /// Initialize
@@ -36,14 +36,14 @@ namespace LayerLab.ArtMaker
             PartsListSlot.gameObject.SetActive(false);
             _startPos = transform.localPosition;
             _rect = GetComponent<RectTransform>();
-            
+
             colorPicker.InitializeColorTexture();
-            
-            Player.Instance.PartsManager.OnChangedParts += ChangePartType;
+
+            if (Player.Instance) Player.Instance.PartsManager.OnChangedParts += ChangePartType;
             Close();
         }
-        
-/// <summary>
+
+        /// <summary>
         /// 부품 목록 표시
         /// Show parts list
         /// </summary>
@@ -82,7 +82,7 @@ namespace LayerLab.ArtMaker
                 ChangeColorList(ColorPresetManager.Instance.GetColorByType(partsType));
                 ColorPresetManager.Instance.SetPresetColor(partsType);
                 colorPicker.gameObject.SetActive(true);
-                
+
                 // 파츠 선택 시 Hex 업데이트 트리거
                 if (ColorFavoriteManager.Instance != null)
                 {
@@ -119,13 +119,13 @@ namespace LayerLab.ArtMaker
         {
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame(); // 한 프레임 더 대기
-            
+
             if (ColorFavoriteManager.Instance != null && ColorPicker.Instance != null)
             {
                 ColorFavoriteManager.Instance.UpdateHexWithCurrentColor();
             }
         }
-        
+
         /// <summary>
         /// 슬롯 선택
         /// Select slot
@@ -136,14 +136,14 @@ namespace LayerLab.ArtMaker
             Player.Instance.PartsManager.EquipParts(_activePartsType, slot.SlotIndex);
             StartCoroutine(SetFrameCo());
         }
-        
+
         /// <summary>
         /// 닫기 버튼 클릭
         /// Click close button
         /// </summary>
         public void OnClick_Close(bool isClickSound = true)
         {
-            if(isClickSound) AudioManager.Instance.PlaySound(SoundList.ButtonClose);
+            if (isClickSound) AudioManager.Instance.PlaySound(SoundList.ButtonClose);
             Close();
             DemoControl.Instance.PanelParts.UnselectSlot();
         }
@@ -159,12 +159,12 @@ namespace LayerLab.ArtMaker
         }
         #endregion
 
-        
-        
-        
-        
+
+
+
+
         #region Private
-        
+
         /// <summary>
         /// 부품 유형 변경
         /// Change part type
@@ -173,10 +173,10 @@ namespace LayerLab.ArtMaker
         /// <param name="index">인덱스 / Index</param>
         private void ChangePartType(PartsType type, int index)
         {
-            if(_activePartsType != type) return;
+            if (_activePartsType != type) return;
             SetFrame();
         }
-        
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -186,7 +186,7 @@ namespace LayerLab.ArtMaker
 
             transform.localPosition = Vector3.SmoothDamp(transform.localPosition, _targetPos, ref _velocity, 0.1f);
         }
-        
+
         /// <summary>
         /// 색상 변경
         /// Change color
@@ -220,10 +220,10 @@ namespace LayerLab.ArtMaker
         /// </summary>
         private void SetFrame()
         {
-            if(!IsShow) return;
+            if (!IsShow) return;
             StartCoroutine(SetFrameCo());
         }
-        
+
         /// <summary>
         /// 프레임 설정 코루틴
         /// Set frame coroutine
@@ -232,13 +232,13 @@ namespace LayerLab.ArtMaker
         private IEnumerator SetFrameCo()
         {
             yield return null;
-            
+
             var slotIndex = Player.Instance.PartsManager.GetCurrentPartIndex(_activePartsType);
             if (slotIndex >= 0)
             {
                 imgSelectFrame.transform.localPosition = _activePartsList[slotIndex].transform.localPosition;
             }
-            
+
             imgSelectFrame.gameObject.SetActive(Player.Instance.PartsManager.GetCurrentPartIndex(_activePartsType) >= 0);
         }
 
@@ -248,18 +248,18 @@ namespace LayerLab.ArtMaker
         /// </summary>
         private void Close()
         {
-            
-            Player.Instance.PartsManager.OnColorChange -= OnChangeColor;
+
+            if (Player.Instance) Player.Instance.PartsManager.OnColorChange -= OnChangeColor;
             _targetPos.x = _rect.sizeDelta.x;
             transform.localPosition = _targetPos;
             gameObject.SetActive(false);
         }
-        
+
         private void OnDestroy()
         {
-            Player.Instance.PartsManager.OnColorChange -= OnChangeColor;
-            Player.Instance.PartsManager.OnChangedParts -= ChangePartType;
-            
+            if (Player.Instance) Player.Instance.PartsManager.OnColorChange -= OnChangeColor;
+            if (Player.Instance) Player.Instance.PartsManager.OnChangedParts -= ChangePartType;
+
         }
         #endregion
     }

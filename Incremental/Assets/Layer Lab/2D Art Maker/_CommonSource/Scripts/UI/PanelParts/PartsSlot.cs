@@ -17,8 +17,8 @@ namespace LayerLab.ArtMaker
         [SerializeField] private Image imageItem;
         public Color ItemColor { get; private set; }
         public bool IsSelect { get; set; }
-        
-        
+
+
         private void Awake()
         {
             // 숨김처리 가능한 유닛만 눈 아이콘 켜주기
@@ -32,9 +32,9 @@ namespace LayerLab.ArtMaker
         /// </summary>
         public void Init()
         {
-            Player.Instance.PartsManager.OnColorChange += OnColorChange;
-            Player.Instance.PartsManager.OnChangedParts += OnChangedItem;
-            
+            if (Player.Instance) Player.Instance.PartsManager.OnColorChange += OnColorChange;
+            if (Player.Instance) Player.Instance.PartsManager.OnChangedParts += OnChangedItem;
+
             PartsType = (PartsType)Enum.Parse(typeof(PartsType), gameObject.name);
             SetSlot();
         }
@@ -47,8 +47,8 @@ namespace LayerLab.ArtMaker
         /// <param name="color">색상 / Color</param>
         private void OnColorChange(PartsType partsType, Color color)
         {
-            if(PartsType != partsType) return;
-            
+            if (PartsType != partsType) return;
+
             if (DemoControl.CanChangeColor(partsType))
             {
                 ItemColor = color;
@@ -67,10 +67,10 @@ namespace LayerLab.ArtMaker
         /// </summary>
         private void OnDestroy()
         {
-            Player.Instance.PartsManager.OnColorChange -= OnColorChange;
-            Player.Instance.PartsManager.OnChangedParts -= OnChangedItem;
+            if (Player.Instance) Player.Instance.PartsManager.OnColorChange -= OnColorChange;
+            if (Player.Instance) Player.Instance.PartsManager.OnChangedParts -= OnChangedItem;
         }
-        
+
         /// <summary>
         /// 아이템 변경 시 호출
         /// Called when item changes
@@ -88,15 +88,17 @@ namespace LayerLab.ArtMaker
         /// </summary>
         private void SetSlot()
         {
+            if (!Player.Instance) return;
+
             var isEmptySlot = Player.Instance.PartsManager.IsEmptyItemByType(PartsType);
-            if (isEmptySlot) 
+            if (isEmptySlot)
             {
                 // 장착된 아이템이 없습니다
                 // There are no equipped items
                 imageIconHide.sprite = IsHide ? DemoControl.Instance.PanelParts.spriteHide[0] : DemoControl.Instance.PanelParts.spriteHide[1];
                 imageSlotBg.sprite = DemoControl.Instance.PanelParts.spriteSlotBg[0];
             }
-            else 
+            else
             {
                 // 장착된 아이템이 있습니다
                 // There is an equipped item
@@ -139,7 +141,7 @@ namespace LayerLab.ArtMaker
         /// </summary>
         public void OnClickNext()
         {
-            Player.Instance.PartsManager.NextItem(PartsType);
+            if (Player.Instance) Player.Instance.PartsManager.NextItem(PartsType);
             SetSlot();
         }
 
@@ -149,7 +151,7 @@ namespace LayerLab.ArtMaker
         /// </summary>
         public void OnClickPrev()
         {
-            Player.Instance.PartsManager.PrevItem(PartsType);
+            if (Player.Instance) Player.Instance.PartsManager.PrevItem(PartsType);
             SetSlot();
         }
 
@@ -163,7 +165,7 @@ namespace LayerLab.ArtMaker
             IsHide = !IsHide;
 
             AudioManager.Instance.PlaySound(SoundList.ButtonEye);
-            Player.Instance.PartsManager.SetHideItem(PartsType, IsHide);
+            if (Player.Instance) Player.Instance.PartsManager.SetHideItem(PartsType, IsHide);
             SetSlot();
         }
 
@@ -209,13 +211,13 @@ namespace LayerLab.ArtMaker
             else
             {
                 AudioManager.Instance.PlaySound(SoundList.ButtonDefault);
-                Player.Instance.PartsManager.EquipParts(PartsType, -1);
+                if (Player.Instance) Player.Instance.PartsManager.EquipParts(PartsType, -1);
             }
             SetSlot();
         }
         #endregion
 
-        
+
         /// <summary>
         /// 선택 해제
         /// Deselect
