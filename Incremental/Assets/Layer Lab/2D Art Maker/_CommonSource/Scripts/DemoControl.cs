@@ -184,7 +184,7 @@ namespace LayerLab.ArtMaker
             if (Player.Instance) Player.Instance.PartsManager.RandomParts();
 
             // 그 다음 컬러피커에서 랜덤 색상 적용
-            ColorPresetManager.Instance.SetRandomAllColor();
+            if (Player.Instance) ColorPresetManager.Instance.SetRandomAllColor(Player.Instance.PartsManager);
 
             // 랜덤 색상 적용 후 Hex 업데이트
             StartCoroutine(UpdateHexAfterRandomColors());

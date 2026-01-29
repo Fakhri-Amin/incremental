@@ -17,47 +17,47 @@ namespace LayerLab.ArtMaker
         [SerializeField] private Image saturationValueImage;        // SV 영역 이미지 / SV area image
         [SerializeField] private Image hueSliderImage;              // Hue 슬라이더 이미지 / Hue slider image
         [SerializeField] private Image previewImage;                // 선택된 색상 미리보기 / Selected color preview
-        
+
         public static ColorPicker Instance { get; private set; }
         public Action<Color> OnColorChanged;
-        
+
         private float _currentHue = 0f;        // 0-1 범위 / 0-1 range
         private float _currentSaturation = 1f; // 0-1 범위 / 0-1 range
         private float _currentValue = 1f;      // 0-1 범위 / 0-1 range
         private Color _currentColor = Color.red;
         private PartsType _currentPartsType;
         private bool _isInitialized = false;
-        
+
         // 각 파츠별로 HSV 값 저장 / Store HSV values for each part
         private Dictionary<PartsType, Vector3> _partsHSV = new Dictionary<PartsType, Vector3>();
         private Dictionary<PartsType, Color> _partsColors = new Dictionary<PartsType, Color>();
-        
+
         // 드래그 상태 추적 / Track drag state
         private bool _isDraggingSV = false;
         private bool _isDraggingHue = false;
-        
+
         // 1. 필드 추가 (기존 필드들 아래에)
         [Header("Favorite Colors & Hex")]
         [SerializeField] private ColorFavoriteManager favoriteManager;
-        
+
         private void Awake()
         {
             Instance = this;
         }
-        
+
         // 2. Start() 메서드에 추가
         private void Start()
         {
             // 기존 코드...
             SetupHueSliderHandler();
-    
+
             // 즐겨찾기 매니저 초기화 추가
             if (favoriteManager != null)
             {
                 favoriteManager.Init(this);
             }
         }
-        
+
         /// <summary>
         /// 컬러피커 초기화
         /// Initialize color picker
@@ -65,12 +65,12 @@ namespace LayerLab.ArtMaker
         public void InitializeColorTexture()
         {
             if (_isInitialized) return;
-            
+
             InitializeHSVColorPicker();
             _isInitialized = true;
             Debug.Log("HSV ColorPicker initialized successfully");
         }
-        
+
         /// <summary>
         /// HSV 컬러피커 초기화
         /// Initialize HSV color picker
@@ -81,7 +81,7 @@ namespace LayerLab.ArtMaker
             UpdateSaturationValueTexture();
             UpdateIndicators();
         }
-        
+
         /// <summary>
         /// Hue 슬라이더 텍스처 생성
         /// Create hue slider texture
@@ -89,23 +89,23 @@ namespace LayerLab.ArtMaker
         private void CreateHueSliderTexture()
         {
             if (hueSliderImage == null) return;
-            
+
             int width = 256;
             int height = 1;
             Texture2D hueTexture = new Texture2D(width, height);
-            
+
             for (int x = 0; x < width; x++)
             {
                 float hue = (float)x / (width - 1);
                 Color color = Color.HSVToRGB(hue, 1f, 1f);
                 hueTexture.SetPixel(x, 0, color);
             }
-            
+
             hueTexture.Apply();
             hueTexture.wrapMode = TextureWrapMode.Clamp;
             hueSliderImage.sprite = Sprite.Create(hueTexture, new Rect(0, 0, width, height), Vector2.one * 0.5f);
         }
-        
+
         /// <summary>
         /// Saturation-Value 영역 텍스처 업데이트
         /// Update saturation-value area texture
@@ -113,10 +113,10 @@ namespace LayerLab.ArtMaker
         private void UpdateSaturationValueTexture()
         {
             if (saturationValueImage == null) return;
-            
+
             int size = 256;
             Texture2D svTexture = new Texture2D(size, size);
-            
+
             for (int x = 0; x < size; x++)
             {
                 for (int y = 0; y < size; y++)
@@ -127,11 +127,11 @@ namespace LayerLab.ArtMaker
                     svTexture.SetPixel(x, y, color);
                 }
             }
-            
+
             svTexture.Apply();
             saturationValueImage.sprite = Sprite.Create(svTexture, new Rect(0, 0, size, size), Vector2.one * 0.5f);
         }
-        
+
         // 3. 컬러피커 열기 메서드 수정
         public void OpenColorPicker(PartsType partsType, Color currentColor, Action<Color> onColorSelected)
         {
@@ -140,16 +140,16 @@ namespace LayerLab.ArtMaker
             {
                 InitializeColorTexture();
             }
-    
+
             _currentPartsType = partsType;
             OnColorChanged = onColorSelected;
-    
+
             gameObject.SetActive(true);
-    
+
             // 한 프레임 대기 후 활성화
             StartCoroutine(ActivateColorPickerDelayed(partsType, currentColor));
         }
-        
+
         /// <summary>
         /// 컬러피커 활성화 지연 실행
         /// Delayed activation of color picker
@@ -157,7 +157,7 @@ namespace LayerLab.ArtMaker
         private IEnumerator ActivateColorPickerDelayed(PartsType partsType, Color currentColor)
         {
             yield return null;
-            
+
             // 저장된 HSV 값이 있으면 사용, 없으면 현재 색상에서 변환
             if (_partsHSV.ContainsKey(partsType))
             {
@@ -172,17 +172,17 @@ namespace LayerLab.ArtMaker
                 Color.RGBToHSV(currentColor, out _currentHue, out _currentSaturation, out _currentValue);
                 Debug.Log($"Converting RGB to HSV for {partsType}: H:{_currentHue:F3} S:{_currentSaturation:F3} V:{_currentValue:F3}");
             }
-            
+
             _currentColor = Color.HSVToRGB(_currentHue, _currentSaturation, _currentValue);
-            
+
             UpdateSaturationValueTexture();
             UpdateIndicators();
             UpdatePreview();
-            
+
             Debug.Log($"ColorPicker fully activated for {partsType}");
         }
- 
-        
+
+
         /// <summary>
         /// 포인터 다운 이벤트
         /// Pointer down event
@@ -193,19 +193,19 @@ namespace LayerLab.ArtMaker
             {
                 return;
             }
-            
+
             Debug.Log("OnPointerDown called");
             Vector2 localPoint;
             bool foundTarget = false;
-            
+
             // SV 영역 클릭 확인
             if (saturationValueArea != null)
             {
                 bool isInSV = RectTransformUtility.ScreenPointToLocalPointInRectangle(
                     saturationValueArea, eventData.position, eventData.pressEventCamera, out localPoint);
-                
+
                 Debug.Log($"SV Area check - Screen pos: {eventData.position}, Local pos: {localPoint}, IsIn: {isInSV}");
-                
+
                 if (isInSV && IsPointInRect(localPoint, saturationValueArea.rect))
                 {
                     _isDraggingSV = true;
@@ -214,16 +214,16 @@ namespace LayerLab.ArtMaker
                     Debug.Log("Started dragging SV area");
                 }
             }
-            
+
             // Hue 슬라이더 클릭 확인 (SV 영역이 아닐 때만)
             if (!foundTarget && hueSlider != null)
             {
                 bool isInHue = RectTransformUtility.ScreenPointToLocalPointInRectangle(
                     hueSlider, eventData.position, eventData.pressEventCamera, out localPoint);
-                
+
                 Debug.Log($"Hue Slider check - Screen pos: {eventData.position}, Local pos: {localPoint}, IsIn: {isInHue}");
                 Debug.Log($"Hue Slider rect: {hueSlider.rect}");
-                
+
                 if (isInHue && IsPointInRect(localPoint, hueSlider.rect))
                 {
                     _isDraggingHue = true;
@@ -232,13 +232,13 @@ namespace LayerLab.ArtMaker
                     Debug.Log("Started dragging Hue slider");
                 }
             }
-            
+
             if (!foundTarget)
             {
                 Debug.Log("No valid target found for click");
             }
         }
-        
+
         /// <summary>
         /// 드래그 이벤트
         /// Drag event
@@ -249,9 +249,9 @@ namespace LayerLab.ArtMaker
             {
                 return;
             }
-            
+
             Vector2 localPoint;
-            
+
             if (_isDraggingSV && saturationValueArea != null)
             {
                 if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
@@ -269,7 +269,7 @@ namespace LayerLab.ArtMaker
                 }
             }
         }
-        
+
         /// <summary>
         /// 점이 Rect 내부에 있는지 확인
         /// Check if point is inside rect
@@ -279,7 +279,7 @@ namespace LayerLab.ArtMaker
             return localPoint.x >= rect.xMin && localPoint.x <= rect.xMax &&
                    localPoint.y >= rect.yMin && localPoint.y <= rect.yMax;
         }
-        
+
         /// <summary>
         /// Saturation과 Value 업데이트
         /// Update saturation and value
@@ -287,14 +287,14 @@ namespace LayerLab.ArtMaker
         private void UpdateSaturationValue(Vector2 localPoint)
         {
             var rect = saturationValueArea.rect;
-            
+
             _currentSaturation = Mathf.Clamp01((localPoint.x - rect.x) / rect.width);
             _currentValue = Mathf.Clamp01((localPoint.y - rect.y) / rect.height);
-            
+
             UpdateColor();
             UpdateIndicators();
         }
-        
+
         /// <summary>
         /// Hue 업데이트
         /// Update hue
@@ -302,12 +302,12 @@ namespace LayerLab.ArtMaker
         private void UpdateHue(Vector2 localPoint)
         {
             if (hueSlider == null) return;
-            
+
             var rect = hueSlider.rect;
             Debug.Log($"UpdateHue - LocalPoint: {localPoint}, Rect: {rect}");
-            
+
             float newHue;
-            
+
             // Hue 슬라이더가 수직인지 수평인지 확인
             if (rect.width > rect.height) // 수평 슬라이더
             {
@@ -319,15 +319,15 @@ namespace LayerLab.ArtMaker
                 newHue = Mathf.Clamp01((localPoint.y - rect.y) / rect.height);
                 Debug.Log($"Vertical slider - Y: {localPoint.y}, Rect.y: {rect.y}, Height: {rect.height}, NewHue: {newHue}");
             }
-            
+
             _currentHue = newHue;
             Debug.Log($"Hue updated to: {_currentHue}");
-            
+
             UpdateColor();
             UpdateSaturationValueTexture(); // Hue가 변경되면 SV 영역도 업데이트
             UpdateIndicators();
         }
-        
+
         /// <summary>
         /// 색상 업데이트 및 적용
         /// Update and apply color
@@ -335,18 +335,18 @@ namespace LayerLab.ArtMaker
         private void UpdateColor()
         {
             _currentColor = Color.HSVToRGB(_currentHue, _currentSaturation, _currentValue);
-            
+
             // 현재 파츠의 HSV와 색상 저장
             _partsHSV[_currentPartsType] = new Vector3(_currentHue, _currentSaturation, _currentValue);
             _partsColors[_currentPartsType] = _currentColor;
-            
+
             OnColorChanged?.Invoke(_currentColor);
             ApplyColorToCharacter(_currentColor);
             UpdatePreview();
-            
+
             Debug.Log($"Color updated - H:{_currentHue:F3} S:{_currentSaturation:F3} V:{_currentValue:F3} RGB:{_currentColor}");
         }
-        
+
         /// <summary>
         /// 인디케이터 위치 업데이트
         /// Update indicator positions
@@ -362,13 +362,13 @@ namespace LayerLab.ArtMaker
                 svIndicator.localPosition = new Vector3(x, y, 0);
                 Debug.Log($"SV Indicator updated to: {svIndicator.localPosition}");
             }
-            
+
             // Hue 인디케이터 위치 업데이트
             if (hueIndicator != null && hueSlider != null)
             {
                 var hueRect = hueSlider.rect;
                 Vector3 newPosition;
-                
+
                 if (hueRect.width > hueRect.height) // 수평 슬라이더
                 {
                     float x = hueRect.x + (hueRect.width * _currentHue);
@@ -379,7 +379,7 @@ namespace LayerLab.ArtMaker
                     float y = hueRect.y + (hueRect.height * _currentHue);
                     newPosition = new Vector3(hueRect.center.x, y, 0);
                 }
-                
+
                 hueIndicator.localPosition = newPosition;
                 Debug.Log($"Hue Indicator updated to: {hueIndicator.localPosition} (Hue: {_currentHue})");
             }
@@ -388,7 +388,7 @@ namespace LayerLab.ArtMaker
                 Debug.LogWarning($"Hue indicator components missing - hueIndicator: {hueIndicator}, hueSlider: {hueSlider}");
             }
         }
-        
+
         /// <summary>
         /// 색상 미리보기 업데이트
         /// Update color preview
@@ -400,7 +400,7 @@ namespace LayerLab.ArtMaker
                 previewImage.color = _currentColor;
             }
         }
-        
+
         /// <summary>
         /// 캐릭터에 색상 적용
         /// Apply color to character
@@ -415,28 +415,28 @@ namespace LayerLab.ArtMaker
                     Player.Instance.PartsManager.ChangeHairColor(color);
                     Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Hair_Short, color);
                     break;
-                
+
                 case PartsType.Beard:
                     Player.Instance.PartsManager.ChangeBeardColor(color);
                     Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Beard, color);
                     break;
-                
+
                 case PartsType.Brow:
                     Player.Instance.PartsManager.ChangeBrowColor(color);
                     Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Brow, color);
                     break;
-                
+
                 case PartsType.Skin:
                     Player.Instance.PartsManager.ChangeSkinColor(color);
                     Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Skin, color);
                     break;
-                
+
                 default:
                     Debug.LogWarning($"Unknown parts type: {_currentPartsType}");
                     break;
             }
         }
-        
+
         /// <summary>
         /// 현재 색상 가져오기
         /// Get current color
@@ -445,7 +445,7 @@ namespace LayerLab.ArtMaker
         {
             return _currentColor;
         }
-        
+
         /// <summary>
         /// 현재 파츠의 위치값 가져오기 (레거시 호환성)
         /// Get current part's position value (legacy compatibility)
@@ -460,7 +460,7 @@ namespace LayerLab.ArtMaker
             }
             return new Vector2(-1, -1);
         }
-        
+
         /// <summary>
         /// 특정 파츠의 위치값 설정 (레거시 호환성)
         /// Set specific part's position value (legacy compatibility)
@@ -472,25 +472,25 @@ namespace LayerLab.ArtMaker
                 // 기존 Hue 값 유지하면서 Saturation과 Value만 설정
                 float existingHue = _partsHSV.ContainsKey(partsType) ? _partsHSV[partsType].x : 0f;
                 Vector3 hsv = new Vector3(existingHue, position.x, position.y);
-                
+
                 Color colorAtPosition = Color.HSVToRGB(hsv.x, hsv.y, hsv.z);
                 _partsHSV[partsType] = hsv;
                 _partsColors[partsType] = colorAtPosition;
-                
+
                 if (_currentPartsType == partsType)
                 {
                     _currentHue = hsv.x;
                     _currentSaturation = hsv.y;
                     _currentValue = hsv.z;
                     _currentColor = colorAtPosition;
-                    
+
                     UpdateSaturationValueTexture();
                     UpdateIndicators();
                     UpdatePreview();
                 }
             }
         }
-        
+
         /// <summary>
         /// 현재 파츠 타입 설정
         /// Set current parts type
@@ -498,7 +498,7 @@ namespace LayerLab.ArtMaker
         public void SetCurrentPartsType(PartsType partsType)
         {
             _currentPartsType = partsType;
-            
+
             if (_partsHSV.ContainsKey(partsType))
             {
                 Vector3 hsv = _partsHSV[partsType];
@@ -506,13 +506,13 @@ namespace LayerLab.ArtMaker
                 _currentSaturation = hsv.y;
                 _currentValue = hsv.z;
                 _currentColor = Color.HSVToRGB(_currentHue, _currentSaturation, _currentValue);
-               
+
                 UpdateSaturationValueTexture();
                 UpdateIndicators();
                 UpdatePreview();
             }
         }
-        
+
         /// <summary>
         /// 랜덤 위치로 포인터 이동 및 색상 적용
         /// Move pointer to random position and apply color
@@ -522,15 +522,15 @@ namespace LayerLab.ArtMaker
             _currentHue = UnityEngine.Random.Range(0f, 1f);
             _currentSaturation = UnityEngine.Random.Range(0.5f, 1f);
             _currentValue = UnityEngine.Random.Range(0.5f, 1f);
-            
+
             UpdateColor();
-            
+
             UpdateSaturationValueTexture();
             UpdateIndicators();
-            
+
             return _currentColor;
         }
-        
+
         /// <summary>
         /// 특정 파츠 타입에 대한 랜덤 위치 색상 적용
         /// Apply random position color for specific parts type
@@ -540,61 +540,61 @@ namespace LayerLab.ArtMaker
             float randomHue = UnityEngine.Random.Range(0f, 1f);
             float randomSaturation = UnityEngine.Random.Range(0.5f, 1f);
             float randomValue = UnityEngine.Random.Range(0.5f, 1f);
-            
+
             Color randomColor = Color.HSVToRGB(randomHue, randomSaturation, randomValue);
-            
+
             _partsHSV[partsType] = new Vector3(randomHue, randomSaturation, randomValue);
             _partsColors[partsType] = randomColor;
-            
+
             if (_currentPartsType == partsType)
             {
                 _currentHue = randomHue;
                 _currentSaturation = randomSaturation;
                 _currentValue = randomValue;
                 _currentColor = randomColor;
-                
+
                 UpdateSaturationValueTexture();
                 UpdateIndicators();
                 UpdatePreview();
             }
-            
+
             return randomColor;
         }
-        
+
         /// <summary>
         /// 특정 파츠 타입에 대한 랜덤 위치 색상 적용 (캐릭터에 바로 적용)
         /// Apply random position color for specific parts type (directly to character)
         /// </summary>
-        public Color ApplyRandomPositionToPart(PartsType partsType)
+        public Color ApplyRandomPositionToPart(PartsManager partsManager, PartsType partsType)
         {
             Color randomColor = SetRandomPositionForPart(partsType);
-            
+
             switch (partsType)
             {
                 case PartsType.Hair_Short:
-                    Player.Instance.PartsManager.ChangeHairColor(randomColor);
-                    Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Hair_Short, randomColor);
+                    partsManager.ChangeHairColor(randomColor);
+                    partsManager.OnColorChange?.Invoke(PartsType.Hair_Short, randomColor);
                     break;
-                
+
                 case PartsType.Beard:
-                    Player.Instance.PartsManager.ChangeBeardColor(randomColor);
-                    Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Beard, randomColor);
+                    partsManager.ChangeBeardColor(randomColor);
+                    partsManager.OnColorChange?.Invoke(PartsType.Beard, randomColor);
                     break;
-                
+
                 case PartsType.Brow:
-                    Player.Instance.PartsManager.ChangeBrowColor(randomColor);
-                    Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Brow, randomColor);
+                    partsManager.ChangeBrowColor(randomColor);
+                    partsManager.OnColorChange?.Invoke(PartsType.Brow, randomColor);
                     break;
-                
+
                 case PartsType.Skin:
-                    Player.Instance.PartsManager.ChangeSkinColor(randomColor);
-                    Player.Instance.PartsManager.OnColorChange?.Invoke(PartsType.Skin, randomColor);
+                    partsManager.ChangeSkinColor(randomColor);
+                    partsManager.OnColorChange?.Invoke(PartsType.Skin, randomColor);
                     break;
             }
-            
+
             return randomColor;
         }
-        
+
         /// <summary>
         /// 수동으로 인디케이터 위치 설정 (레거시 호환성)
         /// Manually set indicator position (legacy compatibility)
@@ -605,16 +605,16 @@ namespace LayerLab.ArtMaker
             {
                 // normalizedPosition을 HSV로 변환 (x=Saturation, y=Value)
                 float existingHue = _partsHSV.ContainsKey(_currentPartsType) ? _partsHSV[_currentPartsType].x : 0f;
-                
+
                 _currentHue = existingHue;
                 _currentSaturation = Mathf.Clamp01(normalizedPosition.x);
                 _currentValue = Mathf.Clamp01(normalizedPosition.y);
-                
+
                 UpdateColor();
                 UpdateIndicators();
             }
         }
-        
+
         private void Update()
         {
             if (Input.GetMouseButtonUp(0))
@@ -624,7 +624,7 @@ namespace LayerLab.ArtMaker
             }
         }
 
-        
+
         /// <summary>
         /// HueSliderHandler 설정
         /// Setup HueSliderHandler
@@ -638,12 +638,12 @@ namespace LayerLab.ArtMaker
                 {
                     hueHandler = hueSlider.gameObject.AddComponent<HueSliderHandler>();
                 }
-                
+
                 hueHandler.OnHueChanged += OnHueChangedFromSlider;
                 Debug.Log("HueSliderHandler connected to ColorPicker");
             }
         }
-        
+
         /// <summary>
         /// Hue 슬라이더에서 Hue 값이 변경되었을 때 호출
         /// Called when hue value is changed from hue slider
@@ -652,12 +652,12 @@ namespace LayerLab.ArtMaker
         {
             _currentHue = newHue;
             Debug.Log($"ColorPicker: Hue updated from slider to {_currentHue}");
-            
+
             UpdateColor();
             UpdateSaturationValueTexture(); // Hue가 변경되면 SV 영역도 업데이트
             UpdateIndicators();
         }
-        
+
         /// <summary>
         /// 메모리 정리
         /// Memory cleanup
