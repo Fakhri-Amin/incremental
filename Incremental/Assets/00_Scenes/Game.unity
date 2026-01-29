@@ -1227,134 +1227,6 @@ Transform:
   - {fileID: 504617940}
   m_Father: {fileID: 1855547581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &75753645
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 75753650}
-  - component: {fileID: 75753649}
-  - component: {fileID: 75753648}
-  - component: {fileID: 75753647}
-  - component: {fileID: 75753646}
-  m_Layer: 0
-  m_Name: Character (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &75753646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75753645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5a2253f9deb848993b3b9f1ec64c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  maxHealth: 100
-  healthAmount: 0
---- !u!114 &75753647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75753645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e90fbc72e5e644b88c8369d69adc15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  partsManager: {fileID: 1419614669}
---- !u!70 &75753648
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75753645}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.04771622, y: 0.88784647}
-  m_Size: {x: 0.92414355, y: 1.7422515}
-  m_Direction: 0
---- !u!50 &75753649
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75753645}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!4 &75753650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75753645}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.61, y: 0.16, z: 0}
-  m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1419614674}
-  - {fileID: 1000630824}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91128313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,133 +2711,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &168150038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 168150039}
-  - component: {fileID: 168150041}
-  - component: {fileID: 168150040}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &168150039
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168150038}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: -3.84}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2077803916}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &168150040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168150038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!108 &168150041
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168150038}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 2
-  m_Color: {r: 1, g: 0.78725344, b: 0.6179246, a: 1}
-  m_Intensity: 6
-  m_Range: 5.03
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
 --- !u!1 &183012851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,97 +6076,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &424125850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 424125851}
-  - component: {fileID: 424125852}
-  m_Layer: 0
-  m_Name: grass4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &424125851
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424125850}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.681, y: 4.729, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 512697201}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &424125852
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424125850}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: ff4f9df243805423c9dc7fcb5b65076e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.75, y: 0.7}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 1
 --- !u!1 &437342502
 GameObject:
   m_ObjectHideFlags: 0
@@ -8263,6 +7917,10 @@ Transform:
   - {fileID: 1179433213}
   - {fileID: 1925063289}
   - {fileID: 2140712877}
+  - {fileID: 915863058}
+  - {fileID: 1264054600}
+  - {fileID: 1023788353}
+  - {fileID: 787821351}
   - {fileID: 1864481792}
   - {fileID: 638737026}
   - {fileID: 870832527}
@@ -8279,6 +7937,9 @@ Transform:
   - {fileID: 913243983}
   - {fileID: 183012852}
   - {fileID: 1270629988}
+  - {fileID: 1000915599}
+  - {fileID: 983144369}
+  - {fileID: 560353449}
   - {fileID: 524302169}
   - {fileID: 120117169}
   - {fileID: 809271962}
@@ -8292,6 +7953,9 @@ Transform:
   - {fileID: 560985702}
   - {fileID: 99690342}
   - {fileID: 1664535521}
+  - {fileID: 1216063076}
+  - {fileID: 568593056}
+  - {fileID: 1519927188}
   - {fileID: 652991855}
   - {fileID: 44352470}
   - {fileID: 606617907}
@@ -8303,7 +7967,10 @@ Transform:
   - {fileID: 1946125054}
   - {fileID: 1467098807}
   - {fileID: 1061689874}
-  - {fileID: 424125851}
+  - {fileID: 1055581152}
+  - {fileID: 2013413007}
+  - {fileID: 1070107111}
+  - {fileID: 628637133}
   - {fileID: 1145851103}
   - {fileID: 951186575}
   - {fileID: 1709040457}
@@ -8652,133 +8319,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &525360786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 525360787}
-  - component: {fileID: 525360789}
-  - component: {fileID: 525360788}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &525360787
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525360786}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: -3.84}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1108134545}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &525360788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525360786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!108 &525360789
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525360786}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 2
-  m_Color: {r: 1, g: 0.78725344, b: 0.6179246, a: 1}
-  m_Intensity: 6
-  m_Range: 5.03
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
 --- !u!1 &530108661
 GameObject:
   m_ObjectHideFlags: 0
@@ -10543,7 +10083,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &559655290
+--- !u!1 &560353448
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10551,126 +10091,89 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 559655291}
-  - component: {fileID: 559655296}
-  - component: {fileID: 559655297}
-  - component: {fileID: 559655299}
-  - component: {fileID: 559655298}
+  - component: {fileID: 560353449}
+  - component: {fileID: 560353450}
   m_Layer: 0
-  m_Name: Character
+  m_Name: grass2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!4 &559655291
+--- !u!4 &560353449
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559655290}
+  m_GameObject: {fileID: 560353448}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.07, y: -0.8, z: 0}
-  m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
+  m_LocalPosition: {x: 2.58, y: -3.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1006900379}
-  - {fileID: 1538321305}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 512697201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &559655296
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!212 &560353450
+SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559655290}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &559655297
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559655290}
+  m_GameObject: {fileID: 560353448}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.04771622, y: 0.88784647}
-  m_Size: {x: 0.92414355, y: 1.7422515}
-  m_Direction: 0
---- !u!114 &559655298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559655290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5a2253f9deb848993b3b9f1ec64c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  maxHealth: 100
-  healthAmount: 0
---- !u!114 &559655299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559655290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e90fbc72e5e644b88c8369d69adc15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  partsManager: {fileID: 1006900375}
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: b173372de7e9442b68c117e28fe3300b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.31, y: 0.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &560985701
 GameObject:
   m_ObjectHideFlags: 0
@@ -10711,6 +10214,97 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560985701}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 02b1753f72257452fafca5b9151efa28, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.31, y: 0.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
+--- !u!1 &568593055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 568593056}
+  - component: {fileID: 568593057}
+  m_Layer: 0
+  m_Name: grass3 (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &568593056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568593055}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.81, y: 2.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &568593057
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568593055}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -11949,6 +11543,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &628637132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628637133}
+  - component: {fileID: 628637134}
+  m_Layer: 0
+  m_Name: grass4 (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &628637133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628637132}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.09, y: -3.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &628637134
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628637132}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: ff4f9df243805423c9dc7fcb5b65076e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &635011526
 GameObject:
   m_ObjectHideFlags: 0
@@ -12376,7 +12061,7 @@ Transform:
   m_GameObject: {fileID: 655036468}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.324, y: 0.879, z: 0}
+  m_LocalPosition: {x: -7.14, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12569,666 +12254,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.03}
   m_Radius: 0.28
---- !u!1 &663285682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 663285688}
-  - component: {fileID: 663285683}
-  - component: {fileID: 663285687}
-  - component: {fileID: 663285686}
-  - component: {fileID: 663285684}
-  - component: {fileID: 663285685}
-  m_Layer: 0
-  m_Name: SpineCharacter (man)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &663285683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663285682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da04b92b90dab46e580db786db1793dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  back:
-  - back/back_c_1
-  - back/back_c_2
-  - back/back_c_3
-  - back/back_c_4
-  - back/back_c_5
-  - back/back_c_6
-  - back/back_c_7
-  - back/back_c_8
-  - back/back_c_9
-  - back/back_c_10
-  - back/back_c_11
-  - back/back_c_12
-  - back/back_c_13
-  - back/back_c_14
-  - back/back_c_15
-  - back/back_c_16
-  - back/back_c_17
-  - back/back_c_18
-  - back/back_c_19
-  - back/back_c_20
-  - back/back_c_21
-  - back/back_c_22
-  - back/back_c_23
-  - back/back_c_24
-  - back/back_c_25
-  - back/back_c_26
-  - back/back_c_27
-  - back/back_c_28
-  - back/back_c_29
-  - back/back_c_30
-  beard:
-  - beard/beard_c_1
-  - beard/beard_c_2
-  - beard/beard_c_3
-  - beard/beard_c_4
-  - beard/beard_c_5
-  - beard/beard_c_6
-  - beard/beard_c_7
-  - beard/beard_c_8
-  - beard/beard_c_9
-  - beard/beard_c_10
-  boots:
-  - boots/boots_c_1
-  - boots/boots_c_2
-  - boots/boots_c_3
-  - boots/boots_c_4
-  - boots/boots_c_5
-  - boots/boots_c_6
-  - boots/boots_c_7
-  - boots/boots_c_8
-  - boots/boots_c_9
-  - boots/boots_c_10
-  - boots/boots_c_11
-  - boots/boots_c_12
-  - boots/boots_c_13
-  - boots/boots_c_14
-  - boots/boots_c_15
-  - boots/boots_c_16
-  - boots/boots_c_17
-  - boots/boots_c_18
-  - boots/boots_c_19
-  - boots/boots_c_20
-  - boots/boots_c_21
-  - boots/boots_c_22
-  - boots/boots_c_23
-  - boots/boots_c_24
-  - boots/boots_c_25
-  - boots/boots_c_26
-  - boots/boots_c_27
-  - boots/boots_c_28
-  - boots/boots_c_29
-  - boots/boots_c_30
-  bottom:
-  - bottom/bottom_c_1
-  - bottom/bottom_c_2
-  - bottom/bottom_c_3
-  - bottom/bottom_c_4
-  - bottom/bottom_c_5
-  - bottom/bottom_c_6
-  - bottom/bottom_c_7
-  - bottom/bottom_c_8
-  - bottom/bottom_c_9
-  - bottom/bottom_c_10
-  - bottom/bottom_c_11
-  - bottom/bottom_c_12
-  - bottom/bottom_c_13
-  - bottom/bottom_c_14
-  - bottom/bottom_c_15
-  - bottom/bottom_c_16
-  - bottom/bottom_c_17
-  - bottom/bottom_c_18
-  - bottom/bottom_c_19
-  - bottom/bottom_c_20
-  - bottom/bottom_c_21
-  - bottom/bottom_c_22
-  - bottom/bottom_c_23
-  - bottom/bottom_c_24
-  - bottom/bottom_c_25
-  - bottom/bottom_c_26
-  - bottom/bottom_c_27
-  - bottom/bottom_c_28
-  - bottom/bottom_c_29
-  - bottom/bottom_c_30
-  - bottom/bottom_c_31
-  - bottom/bottom_c_32
-  - bottom/bottom_c_33
-  - bottom/bottom_c_34
-  - bottom/bottom_c_35
-  - bottom/bottom_c_36
-  - bottom/bottom_c_37
-  - bottom/bottom_c_38
-  - bottom/bottom_c_39
-  - bottom/bottom_c_40
-  - bottom/bottom_c_41
-  - bottom/bottom_c_42
-  - bottom/bottom_c_43
-  - bottom/bottom_c_44
-  - bottom/bottom_c_45
-  - bottom/bottom_c_46
-  - bottom/bottom_c_47
-  - bottom/bottom_c_48
-  - bottom/bottom_c_49
-  - bottom/bottom_c_50
-  brow:
-  - brow/brow_c_1
-  - brow/brow_c_2
-  - brow/brow_c_3
-  - brow/brow_c_4
-  - brow/brow_c_5
-  - brow/brow_c_6
-  - brow/brow_c_7
-  - brow/brow_c_8
-  - brow/brow_c_9
-  - brow/brow_c_10
-  eye:
-  - eyes/eyes_c_1
-  - eyes/eyes_c_2
-  - eyes/eyes_c_3
-  - eyes/eyes_c_4
-  - eyes/eyes_c_5
-  - eyes/eyes_c_6
-  - eyes/eyes_c_7
-  - eyes/eyes_c_8
-  - eyes/eyes_c_9
-  - eyes/eyes_c_10
-  - eyes/eyes_c_11
-  - eyes/eyes_c_12
-  - eyes/eyes_c_13
-  - eyes/eyes_c_14
-  - eyes/eyes_c_15
-  - eyes/eyes_c_16
-  - eyes/eyes_c_17
-  - eyes/eyes_c_18
-  - eyes/eyes_c_19
-  - eyes/eyes_c_20
-  gloves:
-  - gloves/gloves_c_1
-  - gloves/gloves_c_2
-  - gloves/gloves_c_3
-  - gloves/gloves_c_4
-  - gloves/gloves_c_5
-  - gloves/gloves_c_6
-  - gloves/gloves_c_7
-  - gloves/gloves_c_8
-  - gloves/gloves_c_9
-  - gloves/gloves_c_10
-  - gloves/gloves_c_11
-  - gloves/gloves_c_12
-  - gloves/gloves_c_13
-  - gloves/gloves_c_14
-  - gloves/gloves_c_15
-  - gloves/gloves_c_16
-  - gloves/gloves_c_17
-  - gloves/gloves_c_18
-  - gloves/gloves_c_19
-  - gloves/gloves_c_20
-  - gloves/gloves_c_21
-  - gloves/gloves_c_22
-  - gloves/gloves_c_23
-  - gloves/gloves_c_24
-  - gloves/gloves_c_25
-  - gloves/gloves_c_26
-  - gloves/gloves_c_27
-  - gloves/gloves_c_28
-  - gloves/gloves_c_29
-  - gloves/gloves_c_30
-  hairShort:
-  - hair_short/hair_short_c_1
-  - hair_short/hair_short_c_2
-  - hair_short/hair_short_c_3
-  - hair_short/hair_short_c_4
-  - hair_short/hair_short_c_5
-  - hair_short/hair_short_c_6
-  - hair_short/hair_short_c_7
-  - hair_short/hair_short_c_8
-  - hair_short/hair_short_c_9
-  - hair_short/hair_short_c_10
-  - hair_short/hair_short_c_11
-  - hair_short/hair_short_c_12
-  - hair_short/hair_short_c_13
-  - hair_short/hair_short_c_14
-  - hair_short/hair_short_c_15
-  - hair_short/hair_short_c_16
-  - hair_short/hair_short_c_17
-  - hair_short/hair_short_c_18
-  - hair_short/hair_short_c_19
-  - hair_short/hair_short_c_20
-  - hair_short/hair_short_c_21
-  - hair_short/hair_short_c_22
-  - hair_short/hair_short_c_23
-  - hair_short/hair_short_c_24
-  - hair_short/hair_short_c_25
-  - hair_short/hair_short_c_26
-  - hair_short/hair_short_c_27
-  - hair_short/hair_short_c_28
-  - hair_short/hair_short_c_29
-  - hair_short/hair_short_c_30
-  hairHat:
-  - hair_hat/hair_hat_c_1
-  - hair_hat/hair_hat_c_2
-  - hair_hat/hair_hat_c_3
-  - hair_hat/hair_hat_c_4
-  - hair_hat/hair_hat_c_5
-  - hair_hat/hair_hat_c_6
-  - hair_hat/hair_hat_c_7
-  - hair_hat/hair_hat_c_8
-  - hair_hat/hair_hat_c_9
-  - hair_hat/hair_hat_c_10
-  - hair_hat/hair_hat_c_11
-  - hair_hat/hair_hat_c_12
-  - hair_hat/hair_hat_c_13
-  - hair_hat/hair_hat_c_14
-  - hair_hat/hair_hat_c_15
-  - hair_hat/hair_hat_c_16
-  - hair_hat/hair_hat_c_17
-  - hair_hat/hair_hat_c_18
-  - hair_hat/hair_hat_c_19
-  - hair_hat/hair_hat_c_20
-  - hair_hat/hair_hat_c_21
-  - hair_hat/hair_hat_c_22
-  - hair_hat/hair_hat_c_23
-  - hair_hat/hair_hat_c_24
-  - hair_hat/hair_hat_c_25
-  - hair_hat/hair_hat_c_26
-  - hair_hat/hair_hat_c_27
-  - hair_hat/hair_hat_c_28
-  - hair_hat/hair_hat_c_29
-  - hair_hat/hair_hat_c_30
-  helmet:
-  - helmet/helmet_c_1
-  - helmet/helmet_c_2
-  - helmet/helmet_c_3
-  - helmet/helmet_c_4
-  - helmet/helmet_c_5
-  - helmet/helmet_c_6
-  - helmet/helmet_c_7
-  - helmet/helmet_c_8
-  - helmet/helmet_c_9
-  - helmet/helmet_c_10
-  - helmet/helmet_c_11
-  - helmet/helmet_c_12
-  - helmet/helmet_c_13
-  - helmet/helmet_c_14
-  - helmet/helmet_c_15
-  - helmet/helmet_c_16
-  - helmet/helmet_c_17
-  - helmet/helmet_c_18
-  - helmet/helmet_c_19
-  - helmet/helmet_c_20
-  - helmet/helmet_c_21
-  - helmet/helmet_c_22
-  - helmet/helmet_c_23
-  - helmet/helmet_c_24
-  - helmet/helmet_c_25
-  - helmet/helmet_c_26
-  - helmet/helmet_c_27
-  - helmet/helmet_c_28
-  - helmet/helmet_c_29
-  - helmet/helmet_c_30
-  - helmet/helmet_c_31
-  - helmet/helmet_c_32
-  - helmet/helmet_c_33
-  - helmet/helmet_c_34
-  - helmet/helmet_c_35
-  - helmet/helmet_c_36
-  - helmet/helmet_c_37
-  - helmet/helmet_c_38
-  - helmet/helmet_c_39
-  - helmet/helmet_c_40
-  - helmet/helmet_c_41
-  - helmet/helmet_c_42
-  - helmet/helmet_c_43
-  - helmet/helmet_c_44
-  - helmet/helmet_c_45
-  - helmet/helmet_c_46
-  - helmet/helmet_c_47
-  - helmet/helmet_c_48
-  - helmet/helmet_c_49
-  - helmet/helmet_c_50
-  - helmet/helmet_c_51
-  - helmet/helmet_c_52
-  - helmet/helmet_c_53
-  - helmet/helmet_c_54
-  - helmet/helmet_c_55
-  - helmet/helmet_c_56
-  - helmet/helmet_c_57
-  - helmet/helmet_c_58
-  - helmet/helmet_c_59
-  - helmet/helmet_c_60
-  mouth:
-  - mouth/mouth_c_1
-  - mouth/mouth_c_2
-  - mouth/mouth_c_3
-  - mouth/mouth_c_4
-  - mouth/mouth_c_5
-  - mouth/mouth_c_6
-  - mouth/mouth_c_7
-  - mouth/mouth_c_8
-  - mouth/mouth_c_9
-  - mouth/mouth_c_10
-  eyewear:
-  - eyewear/eyewear_c_1
-  - eyewear/eyewear_c_2
-  - eyewear/eyewear_c_3
-  - eyewear/eyewear_c_4
-  - eyewear/eyewear_c_5
-  - eyewear/eyewear_c_6
-  - eyewear/eyewear_c_7
-  - eyewear/eyewear_c_8
-  - eyewear/eyewear_c_9
-  - eyewear/eyewear_c_10
-  - eyewear/eyewear_c_11
-  - eyewear/eyewear_c_12
-  - eyewear/eyewear_c_13
-  - eyewear/eyewear_c_14
-  - eyewear/eyewear_c_15
-  - eyewear/eyewear_c_16
-  - eyewear/eyewear_c_17
-  - eyewear/eyewear_c_18
-  - eyewear/eyewear_c_19
-  - eyewear/eyewear_c_20
-  - eyewear/eyewear_c_21
-  - eyewear/eyewear_c_22
-  - eyewear/eyewear_c_23
-  - eyewear/eyewear_c_24
-  - eyewear/eyewear_c_25
-  - eyewear/eyewear_c_26
-  - eyewear/eyewear_c_27
-  - eyewear/eyewear_c_28
-  - eyewear/eyewear_c_29
-  - eyewear/eyewear_c_30
-  gearLeft:
-  - gear_left/gear_left_c_1
-  - gear_left/gear_left_c_2
-  - gear_left/gear_left_c_3
-  - gear_left/gear_left_c_4
-  - gear_left/gear_left_c_5
-  - gear_left/gear_left_c_6
-  - gear_left/gear_left_c_7
-  - gear_left/gear_left_c_8
-  - gear_left/gear_left_c_9
-  - gear_left/gear_left_c_10
-  - gear_left/gear_left_c_11
-  - gear_left/gear_left_c_12
-  - gear_left/gear_left_c_13
-  - gear_left/gear_left_c_14
-  - gear_left/gear_left_c_15
-  - gear_left/gear_left_c_16
-  - gear_left/gear_left_c_17
-  - gear_left/gear_left_c_18
-  - gear_left/gear_left_c_19
-  - gear_left/gear_left_c_20
-  - gear_left/gear_left_c_21
-  - gear_left/gear_left_c_22
-  - gear_left/gear_left_c_23
-  - gear_left/gear_left_c_24
-  - gear_left/gear_left_c_25
-  - gear_left/gear_left_c_26
-  - gear_left/gear_left_c_27
-  - gear_left/gear_left_c_28
-  - gear_left/gear_left_c_29
-  - gear_left/gear_left_c_30
-  - gear_left/gear_left_c_31
-  - gear_left/gear_left_c_32
-  - gear_left/gear_left_c_33
-  - gear_left/gear_left_c_34
-  - gear_left/gear_left_c_35
-  - gear_left/gear_left_c_36
-  - gear_left/gear_left_c_37
-  - gear_left/gear_left_c_38
-  - gear_left/gear_left_c_39
-  - gear_left/gear_left_c_40
-  gearRight:
-  - gear_right/gear_right_c_1
-  - gear_right/gear_right_c_2
-  - gear_right/gear_right_c_3
-  - gear_right/gear_right_c_4
-  - gear_right/gear_right_c_5
-  - gear_right/gear_right_c_6
-  - gear_right/gear_right_c_7
-  - gear_right/gear_right_c_10
-  - gear_right/gear_right_c_11
-  - gear_right/gear_right_c_12
-  - gear_right/gear_right_c_13
-  - gear_right/gear_right_c_14
-  - gear_right/gear_right_c_15
-  - gear_right/gear_right_c_16
-  - gear_right/gear_right_c_17
-  - gear_right/gear_right_c_18
-  - gear_right/gear_right_c_19
-  - gear_right/gear_right_c_20
-  - gear_right/gear_right_c_21
-  - gear_right/gear_right_c_22
-  - gear_right/gear_right_c_23
-  - gear_right/gear_right_c_24
-  - gear_right/gear_right_c_25
-  - gear_right/gear_right_c_26
-  - gear_right/gear_right_c_27
-  - gear_right/gear_right_c_28
-  - gear_right/gear_right_c_29
-  - gear_right/gear_right_c_30
-  - gear_right/gear_right_c_31
-  - gear_right/gear_right_c_32
-  - gear_right/gear_right_c_33
-  - gear_right/gear_right_c_34
-  - gear_right/gear_right_c_35
-  - gear_right/gear_right_c_36
-  - gear_right/gear_right_c_37
-  - gear_right/gear_right_c_38
-  - gear_right/gear_right_c_39
-  - gear_right/gear_right_c_40
-  top:
-  - top/top_c_1
-  - top/top_c_2
-  - top/top_c_3
-  - top/top_c_4
-  - top/top_c_5
-  - top/top_c_6
-  - top/top_c_7
-  - top/top_c_8
-  - top/top_c_9
-  - top/top_c_10
-  - top/top_c_11
-  - top/top_c_12
-  - top/top_c_13
-  - top/top_c_14
-  - top/top_c_15
-  - top/top_c_16
-  - top/top_c_17
-  - top/top_c_18
-  - top/top_c_19
-  - top/top_c_20
-  - top/top_c_21
-  - top/top_c_22
-  - top/top_c_23
-  - top/top_c_24
-  - top/top_c_25
-  - top/top_c_26
-  - top/top_c_27
-  - top/top_c_28
-  - top/top_c_29
-  - top/top_c_30
-  - top/top_c_31
-  - top/top_c_32
-  - top/top_c_33
-  - top/top_c_34
-  - top/top_c_35
-  - top/top_c_36
-  - top/top_c_37
-  - top/top_c_38
-  - top/top_c_39
-  - top/top_c_40
-  - top/top_c_41
-  - top/top_c_42
-  - top/top_c_43
-  - top/top_c_44
-  - top/top_c_45
-  - top/top_c_46
-  - top/top_c_47
-  - top/top_c_48
-  - top/top_c_49
-  - top/top_c_50
-  - top/top_c_51
-  - top/top_c_52
-  - top/top_c_53
-  - top/top_c_54
-  - top/top_c_55
-  - top/top_c_56
-  - top/top_c_57
-  - top/top_c_58
-  - top/top_c_59
-  - top/top_c_60
-  skin:
-  - skin/skin_1
-  skeletonAnimation: {fileID: 663285684}
-  skeletonGraphic: {fileID: 0}
-  <IsOptimizeSkin>k__BackingField: 0
-  autoInit: 0
---- !u!114 &663285684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663285682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ee98f82138b60430f97c6863317c3a2f, type: 2}
-  initialSkinName: full_skins
-  fixPrefabOverrideViaMeshFilter: 2
-  initialFlipX: 0
-  initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  physicsPositionInheritanceFactor: {x: 1, y: 1}
-  physicsRotationInheritanceFactor: 1
-  physicsMovementRelativeTo: {fileID: 0}
-  updateTiming: 1
-  unscaledTime: 0
-  _animationName: Idle
-  loop: 1
-  timeScale: 1
---- !u!210 &663285685
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663285682}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
-  m_Sort3DAs2D: 0
---- !u!23 &663285686
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663285682}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ed6939b3e846a4917bd2aa0b1fc7ec3c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &663285687
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663285682}
-  m_Mesh: {fileID: 0}
---- !u!4 &663285688
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663285682}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.036, z: 0}
-  m_LocalScale: {x: 1, y: 0.9704, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2077803916}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &664299571
 GameObject:
   m_ObjectHideFlags: 0
@@ -15160,6 +14185,97 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5351187, y: 0.30787352}
   m_EdgeRadius: 0
+--- !u!1 &787821350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 787821351}
+  - component: {fileID: 787821352}
+  m_Layer: 0
+  m_Name: grass1 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &787821351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787821350}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.03, y: 4.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &787821352
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787821350}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 22c7094d89ec94341a469ac2bd727f49, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.46, y: 0.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &794413512
 GameObject:
   m_ObjectHideFlags: 0
@@ -16852,6 +15968,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &915863057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 915863058}
+  - component: {fileID: 915863059}
+  m_Layer: 0
+  m_Name: grass1 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &915863058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915863057}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.86, y: 3.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &915863059
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915863057}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 22c7094d89ec94341a469ac2bd727f49, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.46, y: 0.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!224 &919135248 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1748918547542817333, guid: 172208c80a03f472fa9ab8fa2edabf90, type: 3}
@@ -17802,6 +17009,97 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.03}
   m_Radius: 0.28
+--- !u!1 &983144368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983144369}
+  - component: {fileID: 983144370}
+  m_Layer: 0
+  m_Name: grass2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &983144369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983144368}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.0700006, y: 2.265, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &983144370
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983144368}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: b173372de7e9442b68c117e28fe3300b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.31, y: 0.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &984651557
 GameObject:
   m_ObjectHideFlags: 0
@@ -18021,7 +17319,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &1000630823
+--- !u!1 &1000915598
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18029,716 +17327,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1000630824}
-  - component: {fileID: 1000630826}
-  - component: {fileID: 1000630825}
+  - component: {fileID: 1000915599}
+  - component: {fileID: 1000915600}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: grass2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!4 &1000630824
+--- !u!4 &1000915599
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000630823}
+  m_GameObject: {fileID: 1000915598}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: -3.84}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.01, y: 4.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 75753650}
+  m_Father: {fileID: 512697201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1000630825
-MonoBehaviour:
+--- !u!212 &1000915600
+SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000630823}
+  m_GameObject: {fileID: 1000915598}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!108 &1000630826
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000630823}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 2
-  m_Color: {r: 1, g: 0.78725344, b: 0.6179246, a: 1}
-  m_Intensity: 6
-  m_Range: 5.03
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
---- !u!1 &1006900374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1006900379}
-  - component: {fileID: 1006900375}
-  - component: {fileID: 1006900378}
-  - component: {fileID: 1006900377}
-  - component: {fileID: 1006900376}
-  - component: {fileID: 1006900380}
-  m_Layer: 0
-  m_Name: SpineCharacter (man)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1006900375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006900374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da04b92b90dab46e580db786db1793dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  back:
-  - back/back_c_1
-  - back/back_c_2
-  - back/back_c_3
-  - back/back_c_4
-  - back/back_c_5
-  - back/back_c_6
-  - back/back_c_7
-  - back/back_c_8
-  - back/back_c_9
-  - back/back_c_10
-  - back/back_c_11
-  - back/back_c_12
-  - back/back_c_13
-  - back/back_c_14
-  - back/back_c_15
-  - back/back_c_16
-  - back/back_c_17
-  - back/back_c_18
-  - back/back_c_19
-  - back/back_c_20
-  - back/back_c_21
-  - back/back_c_22
-  - back/back_c_23
-  - back/back_c_24
-  - back/back_c_25
-  - back/back_c_26
-  - back/back_c_27
-  - back/back_c_28
-  - back/back_c_29
-  - back/back_c_30
-  beard:
-  - beard/beard_c_1
-  - beard/beard_c_2
-  - beard/beard_c_3
-  - beard/beard_c_4
-  - beard/beard_c_5
-  - beard/beard_c_6
-  - beard/beard_c_7
-  - beard/beard_c_8
-  - beard/beard_c_9
-  - beard/beard_c_10
-  boots:
-  - boots/boots_c_1
-  - boots/boots_c_2
-  - boots/boots_c_3
-  - boots/boots_c_4
-  - boots/boots_c_5
-  - boots/boots_c_6
-  - boots/boots_c_7
-  - boots/boots_c_8
-  - boots/boots_c_9
-  - boots/boots_c_10
-  - boots/boots_c_11
-  - boots/boots_c_12
-  - boots/boots_c_13
-  - boots/boots_c_14
-  - boots/boots_c_15
-  - boots/boots_c_16
-  - boots/boots_c_17
-  - boots/boots_c_18
-  - boots/boots_c_19
-  - boots/boots_c_20
-  - boots/boots_c_21
-  - boots/boots_c_22
-  - boots/boots_c_23
-  - boots/boots_c_24
-  - boots/boots_c_25
-  - boots/boots_c_26
-  - boots/boots_c_27
-  - boots/boots_c_28
-  - boots/boots_c_29
-  - boots/boots_c_30
-  bottom:
-  - bottom/bottom_c_1
-  - bottom/bottom_c_2
-  - bottom/bottom_c_3
-  - bottom/bottom_c_4
-  - bottom/bottom_c_5
-  - bottom/bottom_c_6
-  - bottom/bottom_c_7
-  - bottom/bottom_c_8
-  - bottom/bottom_c_9
-  - bottom/bottom_c_10
-  - bottom/bottom_c_11
-  - bottom/bottom_c_12
-  - bottom/bottom_c_13
-  - bottom/bottom_c_14
-  - bottom/bottom_c_15
-  - bottom/bottom_c_16
-  - bottom/bottom_c_17
-  - bottom/bottom_c_18
-  - bottom/bottom_c_19
-  - bottom/bottom_c_20
-  - bottom/bottom_c_21
-  - bottom/bottom_c_22
-  - bottom/bottom_c_23
-  - bottom/bottom_c_24
-  - bottom/bottom_c_25
-  - bottom/bottom_c_26
-  - bottom/bottom_c_27
-  - bottom/bottom_c_28
-  - bottom/bottom_c_29
-  - bottom/bottom_c_30
-  - bottom/bottom_c_31
-  - bottom/bottom_c_32
-  - bottom/bottom_c_33
-  - bottom/bottom_c_34
-  - bottom/bottom_c_35
-  - bottom/bottom_c_36
-  - bottom/bottom_c_37
-  - bottom/bottom_c_38
-  - bottom/bottom_c_39
-  - bottom/bottom_c_40
-  - bottom/bottom_c_41
-  - bottom/bottom_c_42
-  - bottom/bottom_c_43
-  - bottom/bottom_c_44
-  - bottom/bottom_c_45
-  - bottom/bottom_c_46
-  - bottom/bottom_c_47
-  - bottom/bottom_c_48
-  - bottom/bottom_c_49
-  - bottom/bottom_c_50
-  brow:
-  - brow/brow_c_1
-  - brow/brow_c_2
-  - brow/brow_c_3
-  - brow/brow_c_4
-  - brow/brow_c_5
-  - brow/brow_c_6
-  - brow/brow_c_7
-  - brow/brow_c_8
-  - brow/brow_c_9
-  - brow/brow_c_10
-  eye:
-  - eyes/eyes_c_1
-  - eyes/eyes_c_2
-  - eyes/eyes_c_3
-  - eyes/eyes_c_4
-  - eyes/eyes_c_5
-  - eyes/eyes_c_6
-  - eyes/eyes_c_7
-  - eyes/eyes_c_8
-  - eyes/eyes_c_9
-  - eyes/eyes_c_10
-  - eyes/eyes_c_11
-  - eyes/eyes_c_12
-  - eyes/eyes_c_13
-  - eyes/eyes_c_14
-  - eyes/eyes_c_15
-  - eyes/eyes_c_16
-  - eyes/eyes_c_17
-  - eyes/eyes_c_18
-  - eyes/eyes_c_19
-  - eyes/eyes_c_20
-  gloves:
-  - gloves/gloves_c_1
-  - gloves/gloves_c_2
-  - gloves/gloves_c_3
-  - gloves/gloves_c_4
-  - gloves/gloves_c_5
-  - gloves/gloves_c_6
-  - gloves/gloves_c_7
-  - gloves/gloves_c_8
-  - gloves/gloves_c_9
-  - gloves/gloves_c_10
-  - gloves/gloves_c_11
-  - gloves/gloves_c_12
-  - gloves/gloves_c_13
-  - gloves/gloves_c_14
-  - gloves/gloves_c_15
-  - gloves/gloves_c_16
-  - gloves/gloves_c_17
-  - gloves/gloves_c_18
-  - gloves/gloves_c_19
-  - gloves/gloves_c_20
-  - gloves/gloves_c_21
-  - gloves/gloves_c_22
-  - gloves/gloves_c_23
-  - gloves/gloves_c_24
-  - gloves/gloves_c_25
-  - gloves/gloves_c_26
-  - gloves/gloves_c_27
-  - gloves/gloves_c_28
-  - gloves/gloves_c_29
-  - gloves/gloves_c_30
-  hairShort:
-  - hair_short/hair_short_c_1
-  - hair_short/hair_short_c_2
-  - hair_short/hair_short_c_3
-  - hair_short/hair_short_c_4
-  - hair_short/hair_short_c_5
-  - hair_short/hair_short_c_6
-  - hair_short/hair_short_c_7
-  - hair_short/hair_short_c_8
-  - hair_short/hair_short_c_9
-  - hair_short/hair_short_c_10
-  - hair_short/hair_short_c_11
-  - hair_short/hair_short_c_12
-  - hair_short/hair_short_c_13
-  - hair_short/hair_short_c_14
-  - hair_short/hair_short_c_15
-  - hair_short/hair_short_c_16
-  - hair_short/hair_short_c_17
-  - hair_short/hair_short_c_18
-  - hair_short/hair_short_c_19
-  - hair_short/hair_short_c_20
-  - hair_short/hair_short_c_21
-  - hair_short/hair_short_c_22
-  - hair_short/hair_short_c_23
-  - hair_short/hair_short_c_24
-  - hair_short/hair_short_c_25
-  - hair_short/hair_short_c_26
-  - hair_short/hair_short_c_27
-  - hair_short/hair_short_c_28
-  - hair_short/hair_short_c_29
-  - hair_short/hair_short_c_30
-  hairHat:
-  - hair_hat/hair_hat_c_1
-  - hair_hat/hair_hat_c_2
-  - hair_hat/hair_hat_c_3
-  - hair_hat/hair_hat_c_4
-  - hair_hat/hair_hat_c_5
-  - hair_hat/hair_hat_c_6
-  - hair_hat/hair_hat_c_7
-  - hair_hat/hair_hat_c_8
-  - hair_hat/hair_hat_c_9
-  - hair_hat/hair_hat_c_10
-  - hair_hat/hair_hat_c_11
-  - hair_hat/hair_hat_c_12
-  - hair_hat/hair_hat_c_13
-  - hair_hat/hair_hat_c_14
-  - hair_hat/hair_hat_c_15
-  - hair_hat/hair_hat_c_16
-  - hair_hat/hair_hat_c_17
-  - hair_hat/hair_hat_c_18
-  - hair_hat/hair_hat_c_19
-  - hair_hat/hair_hat_c_20
-  - hair_hat/hair_hat_c_21
-  - hair_hat/hair_hat_c_22
-  - hair_hat/hair_hat_c_23
-  - hair_hat/hair_hat_c_24
-  - hair_hat/hair_hat_c_25
-  - hair_hat/hair_hat_c_26
-  - hair_hat/hair_hat_c_27
-  - hair_hat/hair_hat_c_28
-  - hair_hat/hair_hat_c_29
-  - hair_hat/hair_hat_c_30
-  helmet:
-  - helmet/helmet_c_1
-  - helmet/helmet_c_2
-  - helmet/helmet_c_3
-  - helmet/helmet_c_4
-  - helmet/helmet_c_5
-  - helmet/helmet_c_6
-  - helmet/helmet_c_7
-  - helmet/helmet_c_8
-  - helmet/helmet_c_9
-  - helmet/helmet_c_10
-  - helmet/helmet_c_11
-  - helmet/helmet_c_12
-  - helmet/helmet_c_13
-  - helmet/helmet_c_14
-  - helmet/helmet_c_15
-  - helmet/helmet_c_16
-  - helmet/helmet_c_17
-  - helmet/helmet_c_18
-  - helmet/helmet_c_19
-  - helmet/helmet_c_20
-  - helmet/helmet_c_21
-  - helmet/helmet_c_22
-  - helmet/helmet_c_23
-  - helmet/helmet_c_24
-  - helmet/helmet_c_25
-  - helmet/helmet_c_26
-  - helmet/helmet_c_27
-  - helmet/helmet_c_28
-  - helmet/helmet_c_29
-  - helmet/helmet_c_30
-  - helmet/helmet_c_31
-  - helmet/helmet_c_32
-  - helmet/helmet_c_33
-  - helmet/helmet_c_34
-  - helmet/helmet_c_35
-  - helmet/helmet_c_36
-  - helmet/helmet_c_37
-  - helmet/helmet_c_38
-  - helmet/helmet_c_39
-  - helmet/helmet_c_40
-  - helmet/helmet_c_41
-  - helmet/helmet_c_42
-  - helmet/helmet_c_43
-  - helmet/helmet_c_44
-  - helmet/helmet_c_45
-  - helmet/helmet_c_46
-  - helmet/helmet_c_47
-  - helmet/helmet_c_48
-  - helmet/helmet_c_49
-  - helmet/helmet_c_50
-  - helmet/helmet_c_51
-  - helmet/helmet_c_52
-  - helmet/helmet_c_53
-  - helmet/helmet_c_54
-  - helmet/helmet_c_55
-  - helmet/helmet_c_56
-  - helmet/helmet_c_57
-  - helmet/helmet_c_58
-  - helmet/helmet_c_59
-  - helmet/helmet_c_60
-  mouth:
-  - mouth/mouth_c_1
-  - mouth/mouth_c_2
-  - mouth/mouth_c_3
-  - mouth/mouth_c_4
-  - mouth/mouth_c_5
-  - mouth/mouth_c_6
-  - mouth/mouth_c_7
-  - mouth/mouth_c_8
-  - mouth/mouth_c_9
-  - mouth/mouth_c_10
-  eyewear:
-  - eyewear/eyewear_c_1
-  - eyewear/eyewear_c_2
-  - eyewear/eyewear_c_3
-  - eyewear/eyewear_c_4
-  - eyewear/eyewear_c_5
-  - eyewear/eyewear_c_6
-  - eyewear/eyewear_c_7
-  - eyewear/eyewear_c_8
-  - eyewear/eyewear_c_9
-  - eyewear/eyewear_c_10
-  - eyewear/eyewear_c_11
-  - eyewear/eyewear_c_12
-  - eyewear/eyewear_c_13
-  - eyewear/eyewear_c_14
-  - eyewear/eyewear_c_15
-  - eyewear/eyewear_c_16
-  - eyewear/eyewear_c_17
-  - eyewear/eyewear_c_18
-  - eyewear/eyewear_c_19
-  - eyewear/eyewear_c_20
-  - eyewear/eyewear_c_21
-  - eyewear/eyewear_c_22
-  - eyewear/eyewear_c_23
-  - eyewear/eyewear_c_24
-  - eyewear/eyewear_c_25
-  - eyewear/eyewear_c_26
-  - eyewear/eyewear_c_27
-  - eyewear/eyewear_c_28
-  - eyewear/eyewear_c_29
-  - eyewear/eyewear_c_30
-  gearLeft:
-  - gear_left/gear_left_c_1
-  - gear_left/gear_left_c_2
-  - gear_left/gear_left_c_3
-  - gear_left/gear_left_c_4
-  - gear_left/gear_left_c_5
-  - gear_left/gear_left_c_6
-  - gear_left/gear_left_c_7
-  - gear_left/gear_left_c_8
-  - gear_left/gear_left_c_9
-  - gear_left/gear_left_c_10
-  - gear_left/gear_left_c_11
-  - gear_left/gear_left_c_12
-  - gear_left/gear_left_c_13
-  - gear_left/gear_left_c_14
-  - gear_left/gear_left_c_15
-  - gear_left/gear_left_c_16
-  - gear_left/gear_left_c_17
-  - gear_left/gear_left_c_18
-  - gear_left/gear_left_c_19
-  - gear_left/gear_left_c_20
-  - gear_left/gear_left_c_21
-  - gear_left/gear_left_c_22
-  - gear_left/gear_left_c_23
-  - gear_left/gear_left_c_24
-  - gear_left/gear_left_c_25
-  - gear_left/gear_left_c_26
-  - gear_left/gear_left_c_27
-  - gear_left/gear_left_c_28
-  - gear_left/gear_left_c_29
-  - gear_left/gear_left_c_30
-  - gear_left/gear_left_c_31
-  - gear_left/gear_left_c_32
-  - gear_left/gear_left_c_33
-  - gear_left/gear_left_c_34
-  - gear_left/gear_left_c_35
-  - gear_left/gear_left_c_36
-  - gear_left/gear_left_c_37
-  - gear_left/gear_left_c_38
-  - gear_left/gear_left_c_39
-  - gear_left/gear_left_c_40
-  gearRight:
-  - gear_right/gear_right_c_1
-  - gear_right/gear_right_c_2
-  - gear_right/gear_right_c_3
-  - gear_right/gear_right_c_4
-  - gear_right/gear_right_c_5
-  - gear_right/gear_right_c_6
-  - gear_right/gear_right_c_7
-  - gear_right/gear_right_c_10
-  - gear_right/gear_right_c_11
-  - gear_right/gear_right_c_12
-  - gear_right/gear_right_c_13
-  - gear_right/gear_right_c_14
-  - gear_right/gear_right_c_15
-  - gear_right/gear_right_c_16
-  - gear_right/gear_right_c_17
-  - gear_right/gear_right_c_18
-  - gear_right/gear_right_c_19
-  - gear_right/gear_right_c_20
-  - gear_right/gear_right_c_21
-  - gear_right/gear_right_c_22
-  - gear_right/gear_right_c_23
-  - gear_right/gear_right_c_24
-  - gear_right/gear_right_c_25
-  - gear_right/gear_right_c_26
-  - gear_right/gear_right_c_27
-  - gear_right/gear_right_c_28
-  - gear_right/gear_right_c_29
-  - gear_right/gear_right_c_30
-  - gear_right/gear_right_c_31
-  - gear_right/gear_right_c_32
-  - gear_right/gear_right_c_33
-  - gear_right/gear_right_c_34
-  - gear_right/gear_right_c_35
-  - gear_right/gear_right_c_36
-  - gear_right/gear_right_c_37
-  - gear_right/gear_right_c_38
-  - gear_right/gear_right_c_39
-  - gear_right/gear_right_c_40
-  top:
-  - top/top_c_1
-  - top/top_c_2
-  - top/top_c_3
-  - top/top_c_4
-  - top/top_c_5
-  - top/top_c_6
-  - top/top_c_7
-  - top/top_c_8
-  - top/top_c_9
-  - top/top_c_10
-  - top/top_c_11
-  - top/top_c_12
-  - top/top_c_13
-  - top/top_c_14
-  - top/top_c_15
-  - top/top_c_16
-  - top/top_c_17
-  - top/top_c_18
-  - top/top_c_19
-  - top/top_c_20
-  - top/top_c_21
-  - top/top_c_22
-  - top/top_c_23
-  - top/top_c_24
-  - top/top_c_25
-  - top/top_c_26
-  - top/top_c_27
-  - top/top_c_28
-  - top/top_c_29
-  - top/top_c_30
-  - top/top_c_31
-  - top/top_c_32
-  - top/top_c_33
-  - top/top_c_34
-  - top/top_c_35
-  - top/top_c_36
-  - top/top_c_37
-  - top/top_c_38
-  - top/top_c_39
-  - top/top_c_40
-  - top/top_c_41
-  - top/top_c_42
-  - top/top_c_43
-  - top/top_c_44
-  - top/top_c_45
-  - top/top_c_46
-  - top/top_c_47
-  - top/top_c_48
-  - top/top_c_49
-  - top/top_c_50
-  - top/top_c_51
-  - top/top_c_52
-  - top/top_c_53
-  - top/top_c_54
-  - top/top_c_55
-  - top/top_c_56
-  - top/top_c_57
-  - top/top_c_58
-  - top/top_c_59
-  - top/top_c_60
-  skin:
-  - skin/skin_1
-  skeletonAnimation: {fileID: 1006900376}
-  skeletonGraphic: {fileID: 0}
-  <IsOptimizeSkin>k__BackingField: 0
-  autoInit: 0
---- !u!114 &1006900376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006900374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ee98f82138b60430f97c6863317c3a2f, type: 2}
-  initialSkinName: full_skins
-  fixPrefabOverrideViaMeshFilter: 2
-  initialFlipX: 0
-  initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  physicsPositionInheritanceFactor: {x: 1, y: 1}
-  physicsRotationInheritanceFactor: 1
-  physicsMovementRelativeTo: {fileID: 0}
-  updateTiming: 1
-  unscaledTime: 0
-  _animationName: Idle
-  loop: 1
-  timeScale: 1
---- !u!23 &1006900377
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006900374}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
@@ -18748,7 +17377,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ed6939b3e846a4917bd2aa0b1fc7ec3c, type: 2}
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18761,7 +17390,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -18771,43 +17400,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1006900378
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006900374}
-  m_Mesh: {fileID: 0}
---- !u!4 &1006900379
+  m_Sprite: {fileID: 21300000, guid: b173372de7e9442b68c117e28fe3300b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.31, y: 0.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
+--- !u!4 &1006900379 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 761639033528938184, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+  m_PrefabInstance: {fileID: 6957713392839104414}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006900374}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.036, z: 0}
-  m_LocalScale: {x: 1, y: 0.9704, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 559655291}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!210 &1006900380
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006900374}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
-  m_Sort3DAs2D: 0
 --- !u!1 &1021113884
 GameObject:
   m_ObjectHideFlags: 0
@@ -18946,6 +17553,97 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.17}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
+--- !u!1 &1023788352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1023788353}
+  - component: {fileID: 1023788354}
+  m_Layer: 0
+  m_Name: grass1 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1023788353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023788352}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.38, y: -3.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1023788354
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023788352}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 22c7094d89ec94341a469ac2bd727f49, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.46, y: 0.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -19479,6 +18177,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &1055581151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055581152}
+  - component: {fileID: 1055581153}
+  m_Layer: 0
+  m_Name: grass4 (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1055581152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055581151}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.53, y: 3.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1055581153
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055581151}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: ff4f9df243805423c9dc7fcb5b65076e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &1061689872
 GameObject:
   m_ObjectHideFlags: 0
@@ -19570,7 +18359,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 512697201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1073975783
+--- !u!1 &1070107110
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19578,124 +18367,141 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1073975788}
-  - component: {fileID: 1073975787}
-  - component: {fileID: 1073975786}
-  - component: {fileID: 1073975785}
-  - component: {fileID: 1073975784}
+  - component: {fileID: 1070107111}
+  - component: {fileID: 1070107112}
   m_Layer: 0
-  m_Name: Character (3)
+  m_Name: grass4 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &1073975784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073975783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5a2253f9deb848993b3b9f1ec64c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  maxHealth: 100
-  healthAmount: 0
---- !u!114 &1073975785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073975783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e90fbc72e5e644b88c8369d69adc15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  partsManager: {fileID: 1541328843}
---- !u!70 &1073975786
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073975783}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.04771622, y: 0.88784647}
-  m_Size: {x: 0.92414355, y: 1.7422515}
-  m_Direction: 0
---- !u!50 &1073975787
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073975783}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!4 &1073975788
+--- !u!4 &1070107111
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073975783}
+  m_GameObject: {fileID: 1070107110}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.58, y: -2.87, z: 0}
-  m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
+  m_LocalPosition: {x: 1.42, y: -2.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1541328848}
-  - {fileID: 1672838789}
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1070107112
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070107110}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: ff4f9df243805423c9dc7fcb5b65076e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
+--- !u!1 &1071384632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1071384634}
+  - component: {fileID: 1071384633}
+  m_Layer: 0
+  m_Name: CharacterSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1071384633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071384632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2e640432946904fa45da2636b49053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  areaCenter: {x: 0, y: 0}
+  areaSize: {x: 10, y: 7.5}
+  characterPrefab: {fileID: 6787176746395806029, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  checkRadius: 0.5
+  maxAttempts: 20
+  spawnInterval: 1
+  spawnDuration: 10
+--- !u!4 &1071384634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071384632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1093544277
@@ -20136,134 +18942,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &1108134540
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1108134545}
-  - component: {fileID: 1108134544}
-  - component: {fileID: 1108134543}
-  - component: {fileID: 1108134542}
-  - component: {fileID: 1108134541}
-  m_Layer: 0
-  m_Name: Character (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1108134541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108134540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5a2253f9deb848993b3b9f1ec64c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  maxHealth: 100
-  healthAmount: 0
---- !u!114 &1108134542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108134540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e90fbc72e5e644b88c8369d69adc15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  partsManager: {fileID: 2135284664}
---- !u!70 &1108134543
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108134540}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.04771622, y: 0.88784647}
-  m_Size: {x: 0.92414355, y: 1.7422515}
-  m_Direction: 0
---- !u!50 &1108134544
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108134540}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!4 &1108134545
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108134540}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.66, y: 0.51, z: 0}
-  m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2135284669}
-  - {fileID: 525360787}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1113899353
 GameObject:
   m_ObjectHideFlags: 0
@@ -21098,7 +19776,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1962514861
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 974da6e2c94b0384c8f65207f0d86366, type: 3}
@@ -21715,6 +20393,97 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.17}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
+--- !u!1 &1216063075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216063076}
+  - component: {fileID: 1216063077}
+  m_Layer: 0
+  m_Name: grass3 (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1216063076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216063075}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.2700005, y: 4.455, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1216063077
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216063075}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 02b1753f72257452fafca5b9151efa28, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.31, y: 0.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -22618,6 +21387,97 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263553122}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 22c7094d89ec94341a469ac2bd727f49, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.46, y: 0.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
+--- !u!1 &1264054599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264054600}
+  - component: {fileID: 1264054601}
+  m_Layer: 0
+  m_Name: grass1 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1264054600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264054599}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.54, y: 2.95, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1264054601
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264054599}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -24750,666 +23610,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &1419614668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1419614674}
-  - component: {fileID: 1419614669}
-  - component: {fileID: 1419614673}
-  - component: {fileID: 1419614672}
-  - component: {fileID: 1419614670}
-  - component: {fileID: 1419614671}
-  m_Layer: 0
-  m_Name: SpineCharacter (man)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1419614669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419614668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da04b92b90dab46e580db786db1793dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  back:
-  - back/back_c_1
-  - back/back_c_2
-  - back/back_c_3
-  - back/back_c_4
-  - back/back_c_5
-  - back/back_c_6
-  - back/back_c_7
-  - back/back_c_8
-  - back/back_c_9
-  - back/back_c_10
-  - back/back_c_11
-  - back/back_c_12
-  - back/back_c_13
-  - back/back_c_14
-  - back/back_c_15
-  - back/back_c_16
-  - back/back_c_17
-  - back/back_c_18
-  - back/back_c_19
-  - back/back_c_20
-  - back/back_c_21
-  - back/back_c_22
-  - back/back_c_23
-  - back/back_c_24
-  - back/back_c_25
-  - back/back_c_26
-  - back/back_c_27
-  - back/back_c_28
-  - back/back_c_29
-  - back/back_c_30
-  beard:
-  - beard/beard_c_1
-  - beard/beard_c_2
-  - beard/beard_c_3
-  - beard/beard_c_4
-  - beard/beard_c_5
-  - beard/beard_c_6
-  - beard/beard_c_7
-  - beard/beard_c_8
-  - beard/beard_c_9
-  - beard/beard_c_10
-  boots:
-  - boots/boots_c_1
-  - boots/boots_c_2
-  - boots/boots_c_3
-  - boots/boots_c_4
-  - boots/boots_c_5
-  - boots/boots_c_6
-  - boots/boots_c_7
-  - boots/boots_c_8
-  - boots/boots_c_9
-  - boots/boots_c_10
-  - boots/boots_c_11
-  - boots/boots_c_12
-  - boots/boots_c_13
-  - boots/boots_c_14
-  - boots/boots_c_15
-  - boots/boots_c_16
-  - boots/boots_c_17
-  - boots/boots_c_18
-  - boots/boots_c_19
-  - boots/boots_c_20
-  - boots/boots_c_21
-  - boots/boots_c_22
-  - boots/boots_c_23
-  - boots/boots_c_24
-  - boots/boots_c_25
-  - boots/boots_c_26
-  - boots/boots_c_27
-  - boots/boots_c_28
-  - boots/boots_c_29
-  - boots/boots_c_30
-  bottom:
-  - bottom/bottom_c_1
-  - bottom/bottom_c_2
-  - bottom/bottom_c_3
-  - bottom/bottom_c_4
-  - bottom/bottom_c_5
-  - bottom/bottom_c_6
-  - bottom/bottom_c_7
-  - bottom/bottom_c_8
-  - bottom/bottom_c_9
-  - bottom/bottom_c_10
-  - bottom/bottom_c_11
-  - bottom/bottom_c_12
-  - bottom/bottom_c_13
-  - bottom/bottom_c_14
-  - bottom/bottom_c_15
-  - bottom/bottom_c_16
-  - bottom/bottom_c_17
-  - bottom/bottom_c_18
-  - bottom/bottom_c_19
-  - bottom/bottom_c_20
-  - bottom/bottom_c_21
-  - bottom/bottom_c_22
-  - bottom/bottom_c_23
-  - bottom/bottom_c_24
-  - bottom/bottom_c_25
-  - bottom/bottom_c_26
-  - bottom/bottom_c_27
-  - bottom/bottom_c_28
-  - bottom/bottom_c_29
-  - bottom/bottom_c_30
-  - bottom/bottom_c_31
-  - bottom/bottom_c_32
-  - bottom/bottom_c_33
-  - bottom/bottom_c_34
-  - bottom/bottom_c_35
-  - bottom/bottom_c_36
-  - bottom/bottom_c_37
-  - bottom/bottom_c_38
-  - bottom/bottom_c_39
-  - bottom/bottom_c_40
-  - bottom/bottom_c_41
-  - bottom/bottom_c_42
-  - bottom/bottom_c_43
-  - bottom/bottom_c_44
-  - bottom/bottom_c_45
-  - bottom/bottom_c_46
-  - bottom/bottom_c_47
-  - bottom/bottom_c_48
-  - bottom/bottom_c_49
-  - bottom/bottom_c_50
-  brow:
-  - brow/brow_c_1
-  - brow/brow_c_2
-  - brow/brow_c_3
-  - brow/brow_c_4
-  - brow/brow_c_5
-  - brow/brow_c_6
-  - brow/brow_c_7
-  - brow/brow_c_8
-  - brow/brow_c_9
-  - brow/brow_c_10
-  eye:
-  - eyes/eyes_c_1
-  - eyes/eyes_c_2
-  - eyes/eyes_c_3
-  - eyes/eyes_c_4
-  - eyes/eyes_c_5
-  - eyes/eyes_c_6
-  - eyes/eyes_c_7
-  - eyes/eyes_c_8
-  - eyes/eyes_c_9
-  - eyes/eyes_c_10
-  - eyes/eyes_c_11
-  - eyes/eyes_c_12
-  - eyes/eyes_c_13
-  - eyes/eyes_c_14
-  - eyes/eyes_c_15
-  - eyes/eyes_c_16
-  - eyes/eyes_c_17
-  - eyes/eyes_c_18
-  - eyes/eyes_c_19
-  - eyes/eyes_c_20
-  gloves:
-  - gloves/gloves_c_1
-  - gloves/gloves_c_2
-  - gloves/gloves_c_3
-  - gloves/gloves_c_4
-  - gloves/gloves_c_5
-  - gloves/gloves_c_6
-  - gloves/gloves_c_7
-  - gloves/gloves_c_8
-  - gloves/gloves_c_9
-  - gloves/gloves_c_10
-  - gloves/gloves_c_11
-  - gloves/gloves_c_12
-  - gloves/gloves_c_13
-  - gloves/gloves_c_14
-  - gloves/gloves_c_15
-  - gloves/gloves_c_16
-  - gloves/gloves_c_17
-  - gloves/gloves_c_18
-  - gloves/gloves_c_19
-  - gloves/gloves_c_20
-  - gloves/gloves_c_21
-  - gloves/gloves_c_22
-  - gloves/gloves_c_23
-  - gloves/gloves_c_24
-  - gloves/gloves_c_25
-  - gloves/gloves_c_26
-  - gloves/gloves_c_27
-  - gloves/gloves_c_28
-  - gloves/gloves_c_29
-  - gloves/gloves_c_30
-  hairShort:
-  - hair_short/hair_short_c_1
-  - hair_short/hair_short_c_2
-  - hair_short/hair_short_c_3
-  - hair_short/hair_short_c_4
-  - hair_short/hair_short_c_5
-  - hair_short/hair_short_c_6
-  - hair_short/hair_short_c_7
-  - hair_short/hair_short_c_8
-  - hair_short/hair_short_c_9
-  - hair_short/hair_short_c_10
-  - hair_short/hair_short_c_11
-  - hair_short/hair_short_c_12
-  - hair_short/hair_short_c_13
-  - hair_short/hair_short_c_14
-  - hair_short/hair_short_c_15
-  - hair_short/hair_short_c_16
-  - hair_short/hair_short_c_17
-  - hair_short/hair_short_c_18
-  - hair_short/hair_short_c_19
-  - hair_short/hair_short_c_20
-  - hair_short/hair_short_c_21
-  - hair_short/hair_short_c_22
-  - hair_short/hair_short_c_23
-  - hair_short/hair_short_c_24
-  - hair_short/hair_short_c_25
-  - hair_short/hair_short_c_26
-  - hair_short/hair_short_c_27
-  - hair_short/hair_short_c_28
-  - hair_short/hair_short_c_29
-  - hair_short/hair_short_c_30
-  hairHat:
-  - hair_hat/hair_hat_c_1
-  - hair_hat/hair_hat_c_2
-  - hair_hat/hair_hat_c_3
-  - hair_hat/hair_hat_c_4
-  - hair_hat/hair_hat_c_5
-  - hair_hat/hair_hat_c_6
-  - hair_hat/hair_hat_c_7
-  - hair_hat/hair_hat_c_8
-  - hair_hat/hair_hat_c_9
-  - hair_hat/hair_hat_c_10
-  - hair_hat/hair_hat_c_11
-  - hair_hat/hair_hat_c_12
-  - hair_hat/hair_hat_c_13
-  - hair_hat/hair_hat_c_14
-  - hair_hat/hair_hat_c_15
-  - hair_hat/hair_hat_c_16
-  - hair_hat/hair_hat_c_17
-  - hair_hat/hair_hat_c_18
-  - hair_hat/hair_hat_c_19
-  - hair_hat/hair_hat_c_20
-  - hair_hat/hair_hat_c_21
-  - hair_hat/hair_hat_c_22
-  - hair_hat/hair_hat_c_23
-  - hair_hat/hair_hat_c_24
-  - hair_hat/hair_hat_c_25
-  - hair_hat/hair_hat_c_26
-  - hair_hat/hair_hat_c_27
-  - hair_hat/hair_hat_c_28
-  - hair_hat/hair_hat_c_29
-  - hair_hat/hair_hat_c_30
-  helmet:
-  - helmet/helmet_c_1
-  - helmet/helmet_c_2
-  - helmet/helmet_c_3
-  - helmet/helmet_c_4
-  - helmet/helmet_c_5
-  - helmet/helmet_c_6
-  - helmet/helmet_c_7
-  - helmet/helmet_c_8
-  - helmet/helmet_c_9
-  - helmet/helmet_c_10
-  - helmet/helmet_c_11
-  - helmet/helmet_c_12
-  - helmet/helmet_c_13
-  - helmet/helmet_c_14
-  - helmet/helmet_c_15
-  - helmet/helmet_c_16
-  - helmet/helmet_c_17
-  - helmet/helmet_c_18
-  - helmet/helmet_c_19
-  - helmet/helmet_c_20
-  - helmet/helmet_c_21
-  - helmet/helmet_c_22
-  - helmet/helmet_c_23
-  - helmet/helmet_c_24
-  - helmet/helmet_c_25
-  - helmet/helmet_c_26
-  - helmet/helmet_c_27
-  - helmet/helmet_c_28
-  - helmet/helmet_c_29
-  - helmet/helmet_c_30
-  - helmet/helmet_c_31
-  - helmet/helmet_c_32
-  - helmet/helmet_c_33
-  - helmet/helmet_c_34
-  - helmet/helmet_c_35
-  - helmet/helmet_c_36
-  - helmet/helmet_c_37
-  - helmet/helmet_c_38
-  - helmet/helmet_c_39
-  - helmet/helmet_c_40
-  - helmet/helmet_c_41
-  - helmet/helmet_c_42
-  - helmet/helmet_c_43
-  - helmet/helmet_c_44
-  - helmet/helmet_c_45
-  - helmet/helmet_c_46
-  - helmet/helmet_c_47
-  - helmet/helmet_c_48
-  - helmet/helmet_c_49
-  - helmet/helmet_c_50
-  - helmet/helmet_c_51
-  - helmet/helmet_c_52
-  - helmet/helmet_c_53
-  - helmet/helmet_c_54
-  - helmet/helmet_c_55
-  - helmet/helmet_c_56
-  - helmet/helmet_c_57
-  - helmet/helmet_c_58
-  - helmet/helmet_c_59
-  - helmet/helmet_c_60
-  mouth:
-  - mouth/mouth_c_1
-  - mouth/mouth_c_2
-  - mouth/mouth_c_3
-  - mouth/mouth_c_4
-  - mouth/mouth_c_5
-  - mouth/mouth_c_6
-  - mouth/mouth_c_7
-  - mouth/mouth_c_8
-  - mouth/mouth_c_9
-  - mouth/mouth_c_10
-  eyewear:
-  - eyewear/eyewear_c_1
-  - eyewear/eyewear_c_2
-  - eyewear/eyewear_c_3
-  - eyewear/eyewear_c_4
-  - eyewear/eyewear_c_5
-  - eyewear/eyewear_c_6
-  - eyewear/eyewear_c_7
-  - eyewear/eyewear_c_8
-  - eyewear/eyewear_c_9
-  - eyewear/eyewear_c_10
-  - eyewear/eyewear_c_11
-  - eyewear/eyewear_c_12
-  - eyewear/eyewear_c_13
-  - eyewear/eyewear_c_14
-  - eyewear/eyewear_c_15
-  - eyewear/eyewear_c_16
-  - eyewear/eyewear_c_17
-  - eyewear/eyewear_c_18
-  - eyewear/eyewear_c_19
-  - eyewear/eyewear_c_20
-  - eyewear/eyewear_c_21
-  - eyewear/eyewear_c_22
-  - eyewear/eyewear_c_23
-  - eyewear/eyewear_c_24
-  - eyewear/eyewear_c_25
-  - eyewear/eyewear_c_26
-  - eyewear/eyewear_c_27
-  - eyewear/eyewear_c_28
-  - eyewear/eyewear_c_29
-  - eyewear/eyewear_c_30
-  gearLeft:
-  - gear_left/gear_left_c_1
-  - gear_left/gear_left_c_2
-  - gear_left/gear_left_c_3
-  - gear_left/gear_left_c_4
-  - gear_left/gear_left_c_5
-  - gear_left/gear_left_c_6
-  - gear_left/gear_left_c_7
-  - gear_left/gear_left_c_8
-  - gear_left/gear_left_c_9
-  - gear_left/gear_left_c_10
-  - gear_left/gear_left_c_11
-  - gear_left/gear_left_c_12
-  - gear_left/gear_left_c_13
-  - gear_left/gear_left_c_14
-  - gear_left/gear_left_c_15
-  - gear_left/gear_left_c_16
-  - gear_left/gear_left_c_17
-  - gear_left/gear_left_c_18
-  - gear_left/gear_left_c_19
-  - gear_left/gear_left_c_20
-  - gear_left/gear_left_c_21
-  - gear_left/gear_left_c_22
-  - gear_left/gear_left_c_23
-  - gear_left/gear_left_c_24
-  - gear_left/gear_left_c_25
-  - gear_left/gear_left_c_26
-  - gear_left/gear_left_c_27
-  - gear_left/gear_left_c_28
-  - gear_left/gear_left_c_29
-  - gear_left/gear_left_c_30
-  - gear_left/gear_left_c_31
-  - gear_left/gear_left_c_32
-  - gear_left/gear_left_c_33
-  - gear_left/gear_left_c_34
-  - gear_left/gear_left_c_35
-  - gear_left/gear_left_c_36
-  - gear_left/gear_left_c_37
-  - gear_left/gear_left_c_38
-  - gear_left/gear_left_c_39
-  - gear_left/gear_left_c_40
-  gearRight:
-  - gear_right/gear_right_c_1
-  - gear_right/gear_right_c_2
-  - gear_right/gear_right_c_3
-  - gear_right/gear_right_c_4
-  - gear_right/gear_right_c_5
-  - gear_right/gear_right_c_6
-  - gear_right/gear_right_c_7
-  - gear_right/gear_right_c_10
-  - gear_right/gear_right_c_11
-  - gear_right/gear_right_c_12
-  - gear_right/gear_right_c_13
-  - gear_right/gear_right_c_14
-  - gear_right/gear_right_c_15
-  - gear_right/gear_right_c_16
-  - gear_right/gear_right_c_17
-  - gear_right/gear_right_c_18
-  - gear_right/gear_right_c_19
-  - gear_right/gear_right_c_20
-  - gear_right/gear_right_c_21
-  - gear_right/gear_right_c_22
-  - gear_right/gear_right_c_23
-  - gear_right/gear_right_c_24
-  - gear_right/gear_right_c_25
-  - gear_right/gear_right_c_26
-  - gear_right/gear_right_c_27
-  - gear_right/gear_right_c_28
-  - gear_right/gear_right_c_29
-  - gear_right/gear_right_c_30
-  - gear_right/gear_right_c_31
-  - gear_right/gear_right_c_32
-  - gear_right/gear_right_c_33
-  - gear_right/gear_right_c_34
-  - gear_right/gear_right_c_35
-  - gear_right/gear_right_c_36
-  - gear_right/gear_right_c_37
-  - gear_right/gear_right_c_38
-  - gear_right/gear_right_c_39
-  - gear_right/gear_right_c_40
-  top:
-  - top/top_c_1
-  - top/top_c_2
-  - top/top_c_3
-  - top/top_c_4
-  - top/top_c_5
-  - top/top_c_6
-  - top/top_c_7
-  - top/top_c_8
-  - top/top_c_9
-  - top/top_c_10
-  - top/top_c_11
-  - top/top_c_12
-  - top/top_c_13
-  - top/top_c_14
-  - top/top_c_15
-  - top/top_c_16
-  - top/top_c_17
-  - top/top_c_18
-  - top/top_c_19
-  - top/top_c_20
-  - top/top_c_21
-  - top/top_c_22
-  - top/top_c_23
-  - top/top_c_24
-  - top/top_c_25
-  - top/top_c_26
-  - top/top_c_27
-  - top/top_c_28
-  - top/top_c_29
-  - top/top_c_30
-  - top/top_c_31
-  - top/top_c_32
-  - top/top_c_33
-  - top/top_c_34
-  - top/top_c_35
-  - top/top_c_36
-  - top/top_c_37
-  - top/top_c_38
-  - top/top_c_39
-  - top/top_c_40
-  - top/top_c_41
-  - top/top_c_42
-  - top/top_c_43
-  - top/top_c_44
-  - top/top_c_45
-  - top/top_c_46
-  - top/top_c_47
-  - top/top_c_48
-  - top/top_c_49
-  - top/top_c_50
-  - top/top_c_51
-  - top/top_c_52
-  - top/top_c_53
-  - top/top_c_54
-  - top/top_c_55
-  - top/top_c_56
-  - top/top_c_57
-  - top/top_c_58
-  - top/top_c_59
-  - top/top_c_60
-  skin:
-  - skin/skin_1
-  skeletonAnimation: {fileID: 1419614670}
-  skeletonGraphic: {fileID: 0}
-  <IsOptimizeSkin>k__BackingField: 0
-  autoInit: 0
---- !u!114 &1419614670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419614668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ee98f82138b60430f97c6863317c3a2f, type: 2}
-  initialSkinName: full_skins
-  fixPrefabOverrideViaMeshFilter: 2
-  initialFlipX: 0
-  initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  physicsPositionInheritanceFactor: {x: 1, y: 1}
-  physicsRotationInheritanceFactor: 1
-  physicsMovementRelativeTo: {fileID: 0}
-  updateTiming: 1
-  unscaledTime: 0
-  _animationName: Idle
-  loop: 1
-  timeScale: 1
---- !u!210 &1419614671
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419614668}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
-  m_Sort3DAs2D: 0
---- !u!23 &1419614672
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419614668}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ed6939b3e846a4917bd2aa0b1fc7ec3c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1419614673
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419614668}
-  m_Mesh: {fileID: 0}
---- !u!4 &1419614674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419614668}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.036, z: 0}
-  m_LocalScale: {x: 1, y: 0.9704, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 75753650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1427288879
 GameObject:
   m_ObjectHideFlags: 0
@@ -26500,6 +24700,97 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 172208c80a03f472fa9ab8fa2edabf90, type: 3}
+--- !u!1 &1519927187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519927188}
+  - component: {fileID: 1519927189}
+  m_Layer: 0
+  m_Name: grass3 (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1519927188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519927187}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3199992, y: -3.5550003, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1519927189
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519927187}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 02b1753f72257452fafca5b9151efa28, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.31, y: 0.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &1534797338
 GameObject:
   m_ObjectHideFlags: 0
@@ -26810,793 +25101,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &1538321304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1538321305}
-  - component: {fileID: 1538321306}
-  - component: {fileID: 1538321307}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1538321305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538321304}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: -3.84}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 559655291}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &1538321306
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538321304}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 2
-  m_Color: {r: 1, g: 0.78725344, b: 0.6179246, a: 1}
-  m_Intensity: 6
-  m_Range: 5.03
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
---- !u!114 &1538321307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538321304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!1 &1541328842
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1541328848}
-  - component: {fileID: 1541328843}
-  - component: {fileID: 1541328847}
-  - component: {fileID: 1541328846}
-  - component: {fileID: 1541328844}
-  - component: {fileID: 1541328845}
-  m_Layer: 0
-  m_Name: SpineCharacter (man)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1541328843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541328842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da04b92b90dab46e580db786db1793dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  back:
-  - back/back_c_1
-  - back/back_c_2
-  - back/back_c_3
-  - back/back_c_4
-  - back/back_c_5
-  - back/back_c_6
-  - back/back_c_7
-  - back/back_c_8
-  - back/back_c_9
-  - back/back_c_10
-  - back/back_c_11
-  - back/back_c_12
-  - back/back_c_13
-  - back/back_c_14
-  - back/back_c_15
-  - back/back_c_16
-  - back/back_c_17
-  - back/back_c_18
-  - back/back_c_19
-  - back/back_c_20
-  - back/back_c_21
-  - back/back_c_22
-  - back/back_c_23
-  - back/back_c_24
-  - back/back_c_25
-  - back/back_c_26
-  - back/back_c_27
-  - back/back_c_28
-  - back/back_c_29
-  - back/back_c_30
-  beard:
-  - beard/beard_c_1
-  - beard/beard_c_2
-  - beard/beard_c_3
-  - beard/beard_c_4
-  - beard/beard_c_5
-  - beard/beard_c_6
-  - beard/beard_c_7
-  - beard/beard_c_8
-  - beard/beard_c_9
-  - beard/beard_c_10
-  boots:
-  - boots/boots_c_1
-  - boots/boots_c_2
-  - boots/boots_c_3
-  - boots/boots_c_4
-  - boots/boots_c_5
-  - boots/boots_c_6
-  - boots/boots_c_7
-  - boots/boots_c_8
-  - boots/boots_c_9
-  - boots/boots_c_10
-  - boots/boots_c_11
-  - boots/boots_c_12
-  - boots/boots_c_13
-  - boots/boots_c_14
-  - boots/boots_c_15
-  - boots/boots_c_16
-  - boots/boots_c_17
-  - boots/boots_c_18
-  - boots/boots_c_19
-  - boots/boots_c_20
-  - boots/boots_c_21
-  - boots/boots_c_22
-  - boots/boots_c_23
-  - boots/boots_c_24
-  - boots/boots_c_25
-  - boots/boots_c_26
-  - boots/boots_c_27
-  - boots/boots_c_28
-  - boots/boots_c_29
-  - boots/boots_c_30
-  bottom:
-  - bottom/bottom_c_1
-  - bottom/bottom_c_2
-  - bottom/bottom_c_3
-  - bottom/bottom_c_4
-  - bottom/bottom_c_5
-  - bottom/bottom_c_6
-  - bottom/bottom_c_7
-  - bottom/bottom_c_8
-  - bottom/bottom_c_9
-  - bottom/bottom_c_10
-  - bottom/bottom_c_11
-  - bottom/bottom_c_12
-  - bottom/bottom_c_13
-  - bottom/bottom_c_14
-  - bottom/bottom_c_15
-  - bottom/bottom_c_16
-  - bottom/bottom_c_17
-  - bottom/bottom_c_18
-  - bottom/bottom_c_19
-  - bottom/bottom_c_20
-  - bottom/bottom_c_21
-  - bottom/bottom_c_22
-  - bottom/bottom_c_23
-  - bottom/bottom_c_24
-  - bottom/bottom_c_25
-  - bottom/bottom_c_26
-  - bottom/bottom_c_27
-  - bottom/bottom_c_28
-  - bottom/bottom_c_29
-  - bottom/bottom_c_30
-  - bottom/bottom_c_31
-  - bottom/bottom_c_32
-  - bottom/bottom_c_33
-  - bottom/bottom_c_34
-  - bottom/bottom_c_35
-  - bottom/bottom_c_36
-  - bottom/bottom_c_37
-  - bottom/bottom_c_38
-  - bottom/bottom_c_39
-  - bottom/bottom_c_40
-  - bottom/bottom_c_41
-  - bottom/bottom_c_42
-  - bottom/bottom_c_43
-  - bottom/bottom_c_44
-  - bottom/bottom_c_45
-  - bottom/bottom_c_46
-  - bottom/bottom_c_47
-  - bottom/bottom_c_48
-  - bottom/bottom_c_49
-  - bottom/bottom_c_50
-  brow:
-  - brow/brow_c_1
-  - brow/brow_c_2
-  - brow/brow_c_3
-  - brow/brow_c_4
-  - brow/brow_c_5
-  - brow/brow_c_6
-  - brow/brow_c_7
-  - brow/brow_c_8
-  - brow/brow_c_9
-  - brow/brow_c_10
-  eye:
-  - eyes/eyes_c_1
-  - eyes/eyes_c_2
-  - eyes/eyes_c_3
-  - eyes/eyes_c_4
-  - eyes/eyes_c_5
-  - eyes/eyes_c_6
-  - eyes/eyes_c_7
-  - eyes/eyes_c_8
-  - eyes/eyes_c_9
-  - eyes/eyes_c_10
-  - eyes/eyes_c_11
-  - eyes/eyes_c_12
-  - eyes/eyes_c_13
-  - eyes/eyes_c_14
-  - eyes/eyes_c_15
-  - eyes/eyes_c_16
-  - eyes/eyes_c_17
-  - eyes/eyes_c_18
-  - eyes/eyes_c_19
-  - eyes/eyes_c_20
-  gloves:
-  - gloves/gloves_c_1
-  - gloves/gloves_c_2
-  - gloves/gloves_c_3
-  - gloves/gloves_c_4
-  - gloves/gloves_c_5
-  - gloves/gloves_c_6
-  - gloves/gloves_c_7
-  - gloves/gloves_c_8
-  - gloves/gloves_c_9
-  - gloves/gloves_c_10
-  - gloves/gloves_c_11
-  - gloves/gloves_c_12
-  - gloves/gloves_c_13
-  - gloves/gloves_c_14
-  - gloves/gloves_c_15
-  - gloves/gloves_c_16
-  - gloves/gloves_c_17
-  - gloves/gloves_c_18
-  - gloves/gloves_c_19
-  - gloves/gloves_c_20
-  - gloves/gloves_c_21
-  - gloves/gloves_c_22
-  - gloves/gloves_c_23
-  - gloves/gloves_c_24
-  - gloves/gloves_c_25
-  - gloves/gloves_c_26
-  - gloves/gloves_c_27
-  - gloves/gloves_c_28
-  - gloves/gloves_c_29
-  - gloves/gloves_c_30
-  hairShort:
-  - hair_short/hair_short_c_1
-  - hair_short/hair_short_c_2
-  - hair_short/hair_short_c_3
-  - hair_short/hair_short_c_4
-  - hair_short/hair_short_c_5
-  - hair_short/hair_short_c_6
-  - hair_short/hair_short_c_7
-  - hair_short/hair_short_c_8
-  - hair_short/hair_short_c_9
-  - hair_short/hair_short_c_10
-  - hair_short/hair_short_c_11
-  - hair_short/hair_short_c_12
-  - hair_short/hair_short_c_13
-  - hair_short/hair_short_c_14
-  - hair_short/hair_short_c_15
-  - hair_short/hair_short_c_16
-  - hair_short/hair_short_c_17
-  - hair_short/hair_short_c_18
-  - hair_short/hair_short_c_19
-  - hair_short/hair_short_c_20
-  - hair_short/hair_short_c_21
-  - hair_short/hair_short_c_22
-  - hair_short/hair_short_c_23
-  - hair_short/hair_short_c_24
-  - hair_short/hair_short_c_25
-  - hair_short/hair_short_c_26
-  - hair_short/hair_short_c_27
-  - hair_short/hair_short_c_28
-  - hair_short/hair_short_c_29
-  - hair_short/hair_short_c_30
-  hairHat:
-  - hair_hat/hair_hat_c_1
-  - hair_hat/hair_hat_c_2
-  - hair_hat/hair_hat_c_3
-  - hair_hat/hair_hat_c_4
-  - hair_hat/hair_hat_c_5
-  - hair_hat/hair_hat_c_6
-  - hair_hat/hair_hat_c_7
-  - hair_hat/hair_hat_c_8
-  - hair_hat/hair_hat_c_9
-  - hair_hat/hair_hat_c_10
-  - hair_hat/hair_hat_c_11
-  - hair_hat/hair_hat_c_12
-  - hair_hat/hair_hat_c_13
-  - hair_hat/hair_hat_c_14
-  - hair_hat/hair_hat_c_15
-  - hair_hat/hair_hat_c_16
-  - hair_hat/hair_hat_c_17
-  - hair_hat/hair_hat_c_18
-  - hair_hat/hair_hat_c_19
-  - hair_hat/hair_hat_c_20
-  - hair_hat/hair_hat_c_21
-  - hair_hat/hair_hat_c_22
-  - hair_hat/hair_hat_c_23
-  - hair_hat/hair_hat_c_24
-  - hair_hat/hair_hat_c_25
-  - hair_hat/hair_hat_c_26
-  - hair_hat/hair_hat_c_27
-  - hair_hat/hair_hat_c_28
-  - hair_hat/hair_hat_c_29
-  - hair_hat/hair_hat_c_30
-  helmet:
-  - helmet/helmet_c_1
-  - helmet/helmet_c_2
-  - helmet/helmet_c_3
-  - helmet/helmet_c_4
-  - helmet/helmet_c_5
-  - helmet/helmet_c_6
-  - helmet/helmet_c_7
-  - helmet/helmet_c_8
-  - helmet/helmet_c_9
-  - helmet/helmet_c_10
-  - helmet/helmet_c_11
-  - helmet/helmet_c_12
-  - helmet/helmet_c_13
-  - helmet/helmet_c_14
-  - helmet/helmet_c_15
-  - helmet/helmet_c_16
-  - helmet/helmet_c_17
-  - helmet/helmet_c_18
-  - helmet/helmet_c_19
-  - helmet/helmet_c_20
-  - helmet/helmet_c_21
-  - helmet/helmet_c_22
-  - helmet/helmet_c_23
-  - helmet/helmet_c_24
-  - helmet/helmet_c_25
-  - helmet/helmet_c_26
-  - helmet/helmet_c_27
-  - helmet/helmet_c_28
-  - helmet/helmet_c_29
-  - helmet/helmet_c_30
-  - helmet/helmet_c_31
-  - helmet/helmet_c_32
-  - helmet/helmet_c_33
-  - helmet/helmet_c_34
-  - helmet/helmet_c_35
-  - helmet/helmet_c_36
-  - helmet/helmet_c_37
-  - helmet/helmet_c_38
-  - helmet/helmet_c_39
-  - helmet/helmet_c_40
-  - helmet/helmet_c_41
-  - helmet/helmet_c_42
-  - helmet/helmet_c_43
-  - helmet/helmet_c_44
-  - helmet/helmet_c_45
-  - helmet/helmet_c_46
-  - helmet/helmet_c_47
-  - helmet/helmet_c_48
-  - helmet/helmet_c_49
-  - helmet/helmet_c_50
-  - helmet/helmet_c_51
-  - helmet/helmet_c_52
-  - helmet/helmet_c_53
-  - helmet/helmet_c_54
-  - helmet/helmet_c_55
-  - helmet/helmet_c_56
-  - helmet/helmet_c_57
-  - helmet/helmet_c_58
-  - helmet/helmet_c_59
-  - helmet/helmet_c_60
-  mouth:
-  - mouth/mouth_c_1
-  - mouth/mouth_c_2
-  - mouth/mouth_c_3
-  - mouth/mouth_c_4
-  - mouth/mouth_c_5
-  - mouth/mouth_c_6
-  - mouth/mouth_c_7
-  - mouth/mouth_c_8
-  - mouth/mouth_c_9
-  - mouth/mouth_c_10
-  eyewear:
-  - eyewear/eyewear_c_1
-  - eyewear/eyewear_c_2
-  - eyewear/eyewear_c_3
-  - eyewear/eyewear_c_4
-  - eyewear/eyewear_c_5
-  - eyewear/eyewear_c_6
-  - eyewear/eyewear_c_7
-  - eyewear/eyewear_c_8
-  - eyewear/eyewear_c_9
-  - eyewear/eyewear_c_10
-  - eyewear/eyewear_c_11
-  - eyewear/eyewear_c_12
-  - eyewear/eyewear_c_13
-  - eyewear/eyewear_c_14
-  - eyewear/eyewear_c_15
-  - eyewear/eyewear_c_16
-  - eyewear/eyewear_c_17
-  - eyewear/eyewear_c_18
-  - eyewear/eyewear_c_19
-  - eyewear/eyewear_c_20
-  - eyewear/eyewear_c_21
-  - eyewear/eyewear_c_22
-  - eyewear/eyewear_c_23
-  - eyewear/eyewear_c_24
-  - eyewear/eyewear_c_25
-  - eyewear/eyewear_c_26
-  - eyewear/eyewear_c_27
-  - eyewear/eyewear_c_28
-  - eyewear/eyewear_c_29
-  - eyewear/eyewear_c_30
-  gearLeft:
-  - gear_left/gear_left_c_1
-  - gear_left/gear_left_c_2
-  - gear_left/gear_left_c_3
-  - gear_left/gear_left_c_4
-  - gear_left/gear_left_c_5
-  - gear_left/gear_left_c_6
-  - gear_left/gear_left_c_7
-  - gear_left/gear_left_c_8
-  - gear_left/gear_left_c_9
-  - gear_left/gear_left_c_10
-  - gear_left/gear_left_c_11
-  - gear_left/gear_left_c_12
-  - gear_left/gear_left_c_13
-  - gear_left/gear_left_c_14
-  - gear_left/gear_left_c_15
-  - gear_left/gear_left_c_16
-  - gear_left/gear_left_c_17
-  - gear_left/gear_left_c_18
-  - gear_left/gear_left_c_19
-  - gear_left/gear_left_c_20
-  - gear_left/gear_left_c_21
-  - gear_left/gear_left_c_22
-  - gear_left/gear_left_c_23
-  - gear_left/gear_left_c_24
-  - gear_left/gear_left_c_25
-  - gear_left/gear_left_c_26
-  - gear_left/gear_left_c_27
-  - gear_left/gear_left_c_28
-  - gear_left/gear_left_c_29
-  - gear_left/gear_left_c_30
-  - gear_left/gear_left_c_31
-  - gear_left/gear_left_c_32
-  - gear_left/gear_left_c_33
-  - gear_left/gear_left_c_34
-  - gear_left/gear_left_c_35
-  - gear_left/gear_left_c_36
-  - gear_left/gear_left_c_37
-  - gear_left/gear_left_c_38
-  - gear_left/gear_left_c_39
-  - gear_left/gear_left_c_40
-  gearRight:
-  - gear_right/gear_right_c_1
-  - gear_right/gear_right_c_2
-  - gear_right/gear_right_c_3
-  - gear_right/gear_right_c_4
-  - gear_right/gear_right_c_5
-  - gear_right/gear_right_c_6
-  - gear_right/gear_right_c_7
-  - gear_right/gear_right_c_10
-  - gear_right/gear_right_c_11
-  - gear_right/gear_right_c_12
-  - gear_right/gear_right_c_13
-  - gear_right/gear_right_c_14
-  - gear_right/gear_right_c_15
-  - gear_right/gear_right_c_16
-  - gear_right/gear_right_c_17
-  - gear_right/gear_right_c_18
-  - gear_right/gear_right_c_19
-  - gear_right/gear_right_c_20
-  - gear_right/gear_right_c_21
-  - gear_right/gear_right_c_22
-  - gear_right/gear_right_c_23
-  - gear_right/gear_right_c_24
-  - gear_right/gear_right_c_25
-  - gear_right/gear_right_c_26
-  - gear_right/gear_right_c_27
-  - gear_right/gear_right_c_28
-  - gear_right/gear_right_c_29
-  - gear_right/gear_right_c_30
-  - gear_right/gear_right_c_31
-  - gear_right/gear_right_c_32
-  - gear_right/gear_right_c_33
-  - gear_right/gear_right_c_34
-  - gear_right/gear_right_c_35
-  - gear_right/gear_right_c_36
-  - gear_right/gear_right_c_37
-  - gear_right/gear_right_c_38
-  - gear_right/gear_right_c_39
-  - gear_right/gear_right_c_40
-  top:
-  - top/top_c_1
-  - top/top_c_2
-  - top/top_c_3
-  - top/top_c_4
-  - top/top_c_5
-  - top/top_c_6
-  - top/top_c_7
-  - top/top_c_8
-  - top/top_c_9
-  - top/top_c_10
-  - top/top_c_11
-  - top/top_c_12
-  - top/top_c_13
-  - top/top_c_14
-  - top/top_c_15
-  - top/top_c_16
-  - top/top_c_17
-  - top/top_c_18
-  - top/top_c_19
-  - top/top_c_20
-  - top/top_c_21
-  - top/top_c_22
-  - top/top_c_23
-  - top/top_c_24
-  - top/top_c_25
-  - top/top_c_26
-  - top/top_c_27
-  - top/top_c_28
-  - top/top_c_29
-  - top/top_c_30
-  - top/top_c_31
-  - top/top_c_32
-  - top/top_c_33
-  - top/top_c_34
-  - top/top_c_35
-  - top/top_c_36
-  - top/top_c_37
-  - top/top_c_38
-  - top/top_c_39
-  - top/top_c_40
-  - top/top_c_41
-  - top/top_c_42
-  - top/top_c_43
-  - top/top_c_44
-  - top/top_c_45
-  - top/top_c_46
-  - top/top_c_47
-  - top/top_c_48
-  - top/top_c_49
-  - top/top_c_50
-  - top/top_c_51
-  - top/top_c_52
-  - top/top_c_53
-  - top/top_c_54
-  - top/top_c_55
-  - top/top_c_56
-  - top/top_c_57
-  - top/top_c_58
-  - top/top_c_59
-  - top/top_c_60
-  skin:
-  - skin/skin_1
-  skeletonAnimation: {fileID: 1541328844}
-  skeletonGraphic: {fileID: 0}
-  <IsOptimizeSkin>k__BackingField: 0
-  autoInit: 0
---- !u!114 &1541328844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541328842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ee98f82138b60430f97c6863317c3a2f, type: 2}
-  initialSkinName: full_skins
-  fixPrefabOverrideViaMeshFilter: 2
-  initialFlipX: 0
-  initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  physicsPositionInheritanceFactor: {x: 1, y: 1}
-  physicsRotationInheritanceFactor: 1
-  physicsMovementRelativeTo: {fileID: 0}
-  updateTiming: 1
-  unscaledTime: 0
-  _animationName: Idle
-  loop: 1
-  timeScale: 1
---- !u!210 &1541328845
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541328842}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
-  m_Sort3DAs2D: 0
---- !u!23 &1541328846
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541328842}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ed6939b3e846a4917bd2aa0b1fc7ec3c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1541328847
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541328842}
-  m_Mesh: {fileID: 0}
---- !u!4 &1541328848
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541328842}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.036, z: 0}
-  m_LocalScale: {x: 1, y: 0.9704, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1073975788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546484177
 GameObject:
   m_ObjectHideFlags: 0
@@ -27651,7 +25155,7 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 55
-  damage: 1
+  damage: 2
   attackRadiusMultiplier: 1.2
   swingAngle: 60
   swingDuration: 0.1
@@ -29569,133 +27073,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &1672838788
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1672838789}
-  - component: {fileID: 1672838791}
-  - component: {fileID: 1672838790}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1672838789
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672838788}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: -3.84}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1073975788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1672838790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672838788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!108 &1672838791
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672838788}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 2
-  m_Color: {r: 1, g: 0.78725344, b: 0.6179246, a: 1}
-  m_Intensity: 6
-  m_Range: 5.03
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
 --- !u!1 &1682912832
 GameObject:
   m_ObjectHideFlags: 0
@@ -34463,6 +31840,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &2013413006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013413007}
+  - component: {fileID: 2013413008}
+  m_Layer: 0
+  m_Name: grass4 (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &2013413007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013413006}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.31, y: -3.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512697201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2013413008
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013413006}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd978340829184deebba378fc37039d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: ff4f9df243805423c9dc7fcb5b65076e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &2017069867
 GameObject:
   m_ObjectHideFlags: 0
@@ -35819,134 +33287,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &2077803911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2077803916}
-  - component: {fileID: 2077803915}
-  - component: {fileID: 2077803914}
-  - component: {fileID: 2077803913}
-  - component: {fileID: 2077803912}
-  m_Layer: 0
-  m_Name: Character (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2077803912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077803911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5a2253f9deb848993b3b9f1ec64c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  maxHealth: 100
-  healthAmount: 0
---- !u!114 &2077803913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077803911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e90fbc72e5e644b88c8369d69adc15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  partsManager: {fileID: 663285683}
---- !u!70 &2077803914
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077803911}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.04771622, y: 0.88784647}
-  m_Size: {x: 0.92414355, y: 1.7422515}
-  m_Direction: 0
---- !u!50 &2077803915
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077803911}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!4 &2077803916
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077803911}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.55, y: -2.13, z: 0}
-  m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 663285688}
-  - {fileID: 168150039}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2086245999
 GameObject:
   m_ObjectHideFlags: 0
@@ -36331,666 +33671,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &2135284663
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2135284669}
-  - component: {fileID: 2135284664}
-  - component: {fileID: 2135284668}
-  - component: {fileID: 2135284667}
-  - component: {fileID: 2135284665}
-  - component: {fileID: 2135284666}
-  m_Layer: 0
-  m_Name: SpineCharacter (man)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2135284664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135284663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da04b92b90dab46e580db786db1793dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  back:
-  - back/back_c_1
-  - back/back_c_2
-  - back/back_c_3
-  - back/back_c_4
-  - back/back_c_5
-  - back/back_c_6
-  - back/back_c_7
-  - back/back_c_8
-  - back/back_c_9
-  - back/back_c_10
-  - back/back_c_11
-  - back/back_c_12
-  - back/back_c_13
-  - back/back_c_14
-  - back/back_c_15
-  - back/back_c_16
-  - back/back_c_17
-  - back/back_c_18
-  - back/back_c_19
-  - back/back_c_20
-  - back/back_c_21
-  - back/back_c_22
-  - back/back_c_23
-  - back/back_c_24
-  - back/back_c_25
-  - back/back_c_26
-  - back/back_c_27
-  - back/back_c_28
-  - back/back_c_29
-  - back/back_c_30
-  beard:
-  - beard/beard_c_1
-  - beard/beard_c_2
-  - beard/beard_c_3
-  - beard/beard_c_4
-  - beard/beard_c_5
-  - beard/beard_c_6
-  - beard/beard_c_7
-  - beard/beard_c_8
-  - beard/beard_c_9
-  - beard/beard_c_10
-  boots:
-  - boots/boots_c_1
-  - boots/boots_c_2
-  - boots/boots_c_3
-  - boots/boots_c_4
-  - boots/boots_c_5
-  - boots/boots_c_6
-  - boots/boots_c_7
-  - boots/boots_c_8
-  - boots/boots_c_9
-  - boots/boots_c_10
-  - boots/boots_c_11
-  - boots/boots_c_12
-  - boots/boots_c_13
-  - boots/boots_c_14
-  - boots/boots_c_15
-  - boots/boots_c_16
-  - boots/boots_c_17
-  - boots/boots_c_18
-  - boots/boots_c_19
-  - boots/boots_c_20
-  - boots/boots_c_21
-  - boots/boots_c_22
-  - boots/boots_c_23
-  - boots/boots_c_24
-  - boots/boots_c_25
-  - boots/boots_c_26
-  - boots/boots_c_27
-  - boots/boots_c_28
-  - boots/boots_c_29
-  - boots/boots_c_30
-  bottom:
-  - bottom/bottom_c_1
-  - bottom/bottom_c_2
-  - bottom/bottom_c_3
-  - bottom/bottom_c_4
-  - bottom/bottom_c_5
-  - bottom/bottom_c_6
-  - bottom/bottom_c_7
-  - bottom/bottom_c_8
-  - bottom/bottom_c_9
-  - bottom/bottom_c_10
-  - bottom/bottom_c_11
-  - bottom/bottom_c_12
-  - bottom/bottom_c_13
-  - bottom/bottom_c_14
-  - bottom/bottom_c_15
-  - bottom/bottom_c_16
-  - bottom/bottom_c_17
-  - bottom/bottom_c_18
-  - bottom/bottom_c_19
-  - bottom/bottom_c_20
-  - bottom/bottom_c_21
-  - bottom/bottom_c_22
-  - bottom/bottom_c_23
-  - bottom/bottom_c_24
-  - bottom/bottom_c_25
-  - bottom/bottom_c_26
-  - bottom/bottom_c_27
-  - bottom/bottom_c_28
-  - bottom/bottom_c_29
-  - bottom/bottom_c_30
-  - bottom/bottom_c_31
-  - bottom/bottom_c_32
-  - bottom/bottom_c_33
-  - bottom/bottom_c_34
-  - bottom/bottom_c_35
-  - bottom/bottom_c_36
-  - bottom/bottom_c_37
-  - bottom/bottom_c_38
-  - bottom/bottom_c_39
-  - bottom/bottom_c_40
-  - bottom/bottom_c_41
-  - bottom/bottom_c_42
-  - bottom/bottom_c_43
-  - bottom/bottom_c_44
-  - bottom/bottom_c_45
-  - bottom/bottom_c_46
-  - bottom/bottom_c_47
-  - bottom/bottom_c_48
-  - bottom/bottom_c_49
-  - bottom/bottom_c_50
-  brow:
-  - brow/brow_c_1
-  - brow/brow_c_2
-  - brow/brow_c_3
-  - brow/brow_c_4
-  - brow/brow_c_5
-  - brow/brow_c_6
-  - brow/brow_c_7
-  - brow/brow_c_8
-  - brow/brow_c_9
-  - brow/brow_c_10
-  eye:
-  - eyes/eyes_c_1
-  - eyes/eyes_c_2
-  - eyes/eyes_c_3
-  - eyes/eyes_c_4
-  - eyes/eyes_c_5
-  - eyes/eyes_c_6
-  - eyes/eyes_c_7
-  - eyes/eyes_c_8
-  - eyes/eyes_c_9
-  - eyes/eyes_c_10
-  - eyes/eyes_c_11
-  - eyes/eyes_c_12
-  - eyes/eyes_c_13
-  - eyes/eyes_c_14
-  - eyes/eyes_c_15
-  - eyes/eyes_c_16
-  - eyes/eyes_c_17
-  - eyes/eyes_c_18
-  - eyes/eyes_c_19
-  - eyes/eyes_c_20
-  gloves:
-  - gloves/gloves_c_1
-  - gloves/gloves_c_2
-  - gloves/gloves_c_3
-  - gloves/gloves_c_4
-  - gloves/gloves_c_5
-  - gloves/gloves_c_6
-  - gloves/gloves_c_7
-  - gloves/gloves_c_8
-  - gloves/gloves_c_9
-  - gloves/gloves_c_10
-  - gloves/gloves_c_11
-  - gloves/gloves_c_12
-  - gloves/gloves_c_13
-  - gloves/gloves_c_14
-  - gloves/gloves_c_15
-  - gloves/gloves_c_16
-  - gloves/gloves_c_17
-  - gloves/gloves_c_18
-  - gloves/gloves_c_19
-  - gloves/gloves_c_20
-  - gloves/gloves_c_21
-  - gloves/gloves_c_22
-  - gloves/gloves_c_23
-  - gloves/gloves_c_24
-  - gloves/gloves_c_25
-  - gloves/gloves_c_26
-  - gloves/gloves_c_27
-  - gloves/gloves_c_28
-  - gloves/gloves_c_29
-  - gloves/gloves_c_30
-  hairShort:
-  - hair_short/hair_short_c_1
-  - hair_short/hair_short_c_2
-  - hair_short/hair_short_c_3
-  - hair_short/hair_short_c_4
-  - hair_short/hair_short_c_5
-  - hair_short/hair_short_c_6
-  - hair_short/hair_short_c_7
-  - hair_short/hair_short_c_8
-  - hair_short/hair_short_c_9
-  - hair_short/hair_short_c_10
-  - hair_short/hair_short_c_11
-  - hair_short/hair_short_c_12
-  - hair_short/hair_short_c_13
-  - hair_short/hair_short_c_14
-  - hair_short/hair_short_c_15
-  - hair_short/hair_short_c_16
-  - hair_short/hair_short_c_17
-  - hair_short/hair_short_c_18
-  - hair_short/hair_short_c_19
-  - hair_short/hair_short_c_20
-  - hair_short/hair_short_c_21
-  - hair_short/hair_short_c_22
-  - hair_short/hair_short_c_23
-  - hair_short/hair_short_c_24
-  - hair_short/hair_short_c_25
-  - hair_short/hair_short_c_26
-  - hair_short/hair_short_c_27
-  - hair_short/hair_short_c_28
-  - hair_short/hair_short_c_29
-  - hair_short/hair_short_c_30
-  hairHat:
-  - hair_hat/hair_hat_c_1
-  - hair_hat/hair_hat_c_2
-  - hair_hat/hair_hat_c_3
-  - hair_hat/hair_hat_c_4
-  - hair_hat/hair_hat_c_5
-  - hair_hat/hair_hat_c_6
-  - hair_hat/hair_hat_c_7
-  - hair_hat/hair_hat_c_8
-  - hair_hat/hair_hat_c_9
-  - hair_hat/hair_hat_c_10
-  - hair_hat/hair_hat_c_11
-  - hair_hat/hair_hat_c_12
-  - hair_hat/hair_hat_c_13
-  - hair_hat/hair_hat_c_14
-  - hair_hat/hair_hat_c_15
-  - hair_hat/hair_hat_c_16
-  - hair_hat/hair_hat_c_17
-  - hair_hat/hair_hat_c_18
-  - hair_hat/hair_hat_c_19
-  - hair_hat/hair_hat_c_20
-  - hair_hat/hair_hat_c_21
-  - hair_hat/hair_hat_c_22
-  - hair_hat/hair_hat_c_23
-  - hair_hat/hair_hat_c_24
-  - hair_hat/hair_hat_c_25
-  - hair_hat/hair_hat_c_26
-  - hair_hat/hair_hat_c_27
-  - hair_hat/hair_hat_c_28
-  - hair_hat/hair_hat_c_29
-  - hair_hat/hair_hat_c_30
-  helmet:
-  - helmet/helmet_c_1
-  - helmet/helmet_c_2
-  - helmet/helmet_c_3
-  - helmet/helmet_c_4
-  - helmet/helmet_c_5
-  - helmet/helmet_c_6
-  - helmet/helmet_c_7
-  - helmet/helmet_c_8
-  - helmet/helmet_c_9
-  - helmet/helmet_c_10
-  - helmet/helmet_c_11
-  - helmet/helmet_c_12
-  - helmet/helmet_c_13
-  - helmet/helmet_c_14
-  - helmet/helmet_c_15
-  - helmet/helmet_c_16
-  - helmet/helmet_c_17
-  - helmet/helmet_c_18
-  - helmet/helmet_c_19
-  - helmet/helmet_c_20
-  - helmet/helmet_c_21
-  - helmet/helmet_c_22
-  - helmet/helmet_c_23
-  - helmet/helmet_c_24
-  - helmet/helmet_c_25
-  - helmet/helmet_c_26
-  - helmet/helmet_c_27
-  - helmet/helmet_c_28
-  - helmet/helmet_c_29
-  - helmet/helmet_c_30
-  - helmet/helmet_c_31
-  - helmet/helmet_c_32
-  - helmet/helmet_c_33
-  - helmet/helmet_c_34
-  - helmet/helmet_c_35
-  - helmet/helmet_c_36
-  - helmet/helmet_c_37
-  - helmet/helmet_c_38
-  - helmet/helmet_c_39
-  - helmet/helmet_c_40
-  - helmet/helmet_c_41
-  - helmet/helmet_c_42
-  - helmet/helmet_c_43
-  - helmet/helmet_c_44
-  - helmet/helmet_c_45
-  - helmet/helmet_c_46
-  - helmet/helmet_c_47
-  - helmet/helmet_c_48
-  - helmet/helmet_c_49
-  - helmet/helmet_c_50
-  - helmet/helmet_c_51
-  - helmet/helmet_c_52
-  - helmet/helmet_c_53
-  - helmet/helmet_c_54
-  - helmet/helmet_c_55
-  - helmet/helmet_c_56
-  - helmet/helmet_c_57
-  - helmet/helmet_c_58
-  - helmet/helmet_c_59
-  - helmet/helmet_c_60
-  mouth:
-  - mouth/mouth_c_1
-  - mouth/mouth_c_2
-  - mouth/mouth_c_3
-  - mouth/mouth_c_4
-  - mouth/mouth_c_5
-  - mouth/mouth_c_6
-  - mouth/mouth_c_7
-  - mouth/mouth_c_8
-  - mouth/mouth_c_9
-  - mouth/mouth_c_10
-  eyewear:
-  - eyewear/eyewear_c_1
-  - eyewear/eyewear_c_2
-  - eyewear/eyewear_c_3
-  - eyewear/eyewear_c_4
-  - eyewear/eyewear_c_5
-  - eyewear/eyewear_c_6
-  - eyewear/eyewear_c_7
-  - eyewear/eyewear_c_8
-  - eyewear/eyewear_c_9
-  - eyewear/eyewear_c_10
-  - eyewear/eyewear_c_11
-  - eyewear/eyewear_c_12
-  - eyewear/eyewear_c_13
-  - eyewear/eyewear_c_14
-  - eyewear/eyewear_c_15
-  - eyewear/eyewear_c_16
-  - eyewear/eyewear_c_17
-  - eyewear/eyewear_c_18
-  - eyewear/eyewear_c_19
-  - eyewear/eyewear_c_20
-  - eyewear/eyewear_c_21
-  - eyewear/eyewear_c_22
-  - eyewear/eyewear_c_23
-  - eyewear/eyewear_c_24
-  - eyewear/eyewear_c_25
-  - eyewear/eyewear_c_26
-  - eyewear/eyewear_c_27
-  - eyewear/eyewear_c_28
-  - eyewear/eyewear_c_29
-  - eyewear/eyewear_c_30
-  gearLeft:
-  - gear_left/gear_left_c_1
-  - gear_left/gear_left_c_2
-  - gear_left/gear_left_c_3
-  - gear_left/gear_left_c_4
-  - gear_left/gear_left_c_5
-  - gear_left/gear_left_c_6
-  - gear_left/gear_left_c_7
-  - gear_left/gear_left_c_8
-  - gear_left/gear_left_c_9
-  - gear_left/gear_left_c_10
-  - gear_left/gear_left_c_11
-  - gear_left/gear_left_c_12
-  - gear_left/gear_left_c_13
-  - gear_left/gear_left_c_14
-  - gear_left/gear_left_c_15
-  - gear_left/gear_left_c_16
-  - gear_left/gear_left_c_17
-  - gear_left/gear_left_c_18
-  - gear_left/gear_left_c_19
-  - gear_left/gear_left_c_20
-  - gear_left/gear_left_c_21
-  - gear_left/gear_left_c_22
-  - gear_left/gear_left_c_23
-  - gear_left/gear_left_c_24
-  - gear_left/gear_left_c_25
-  - gear_left/gear_left_c_26
-  - gear_left/gear_left_c_27
-  - gear_left/gear_left_c_28
-  - gear_left/gear_left_c_29
-  - gear_left/gear_left_c_30
-  - gear_left/gear_left_c_31
-  - gear_left/gear_left_c_32
-  - gear_left/gear_left_c_33
-  - gear_left/gear_left_c_34
-  - gear_left/gear_left_c_35
-  - gear_left/gear_left_c_36
-  - gear_left/gear_left_c_37
-  - gear_left/gear_left_c_38
-  - gear_left/gear_left_c_39
-  - gear_left/gear_left_c_40
-  gearRight:
-  - gear_right/gear_right_c_1
-  - gear_right/gear_right_c_2
-  - gear_right/gear_right_c_3
-  - gear_right/gear_right_c_4
-  - gear_right/gear_right_c_5
-  - gear_right/gear_right_c_6
-  - gear_right/gear_right_c_7
-  - gear_right/gear_right_c_10
-  - gear_right/gear_right_c_11
-  - gear_right/gear_right_c_12
-  - gear_right/gear_right_c_13
-  - gear_right/gear_right_c_14
-  - gear_right/gear_right_c_15
-  - gear_right/gear_right_c_16
-  - gear_right/gear_right_c_17
-  - gear_right/gear_right_c_18
-  - gear_right/gear_right_c_19
-  - gear_right/gear_right_c_20
-  - gear_right/gear_right_c_21
-  - gear_right/gear_right_c_22
-  - gear_right/gear_right_c_23
-  - gear_right/gear_right_c_24
-  - gear_right/gear_right_c_25
-  - gear_right/gear_right_c_26
-  - gear_right/gear_right_c_27
-  - gear_right/gear_right_c_28
-  - gear_right/gear_right_c_29
-  - gear_right/gear_right_c_30
-  - gear_right/gear_right_c_31
-  - gear_right/gear_right_c_32
-  - gear_right/gear_right_c_33
-  - gear_right/gear_right_c_34
-  - gear_right/gear_right_c_35
-  - gear_right/gear_right_c_36
-  - gear_right/gear_right_c_37
-  - gear_right/gear_right_c_38
-  - gear_right/gear_right_c_39
-  - gear_right/gear_right_c_40
-  top:
-  - top/top_c_1
-  - top/top_c_2
-  - top/top_c_3
-  - top/top_c_4
-  - top/top_c_5
-  - top/top_c_6
-  - top/top_c_7
-  - top/top_c_8
-  - top/top_c_9
-  - top/top_c_10
-  - top/top_c_11
-  - top/top_c_12
-  - top/top_c_13
-  - top/top_c_14
-  - top/top_c_15
-  - top/top_c_16
-  - top/top_c_17
-  - top/top_c_18
-  - top/top_c_19
-  - top/top_c_20
-  - top/top_c_21
-  - top/top_c_22
-  - top/top_c_23
-  - top/top_c_24
-  - top/top_c_25
-  - top/top_c_26
-  - top/top_c_27
-  - top/top_c_28
-  - top/top_c_29
-  - top/top_c_30
-  - top/top_c_31
-  - top/top_c_32
-  - top/top_c_33
-  - top/top_c_34
-  - top/top_c_35
-  - top/top_c_36
-  - top/top_c_37
-  - top/top_c_38
-  - top/top_c_39
-  - top/top_c_40
-  - top/top_c_41
-  - top/top_c_42
-  - top/top_c_43
-  - top/top_c_44
-  - top/top_c_45
-  - top/top_c_46
-  - top/top_c_47
-  - top/top_c_48
-  - top/top_c_49
-  - top/top_c_50
-  - top/top_c_51
-  - top/top_c_52
-  - top/top_c_53
-  - top/top_c_54
-  - top/top_c_55
-  - top/top_c_56
-  - top/top_c_57
-  - top/top_c_58
-  - top/top_c_59
-  - top/top_c_60
-  skin:
-  - skin/skin_1
-  skeletonAnimation: {fileID: 2135284665}
-  skeletonGraphic: {fileID: 0}
-  <IsOptimizeSkin>k__BackingField: 0
-  autoInit: 0
---- !u!114 &2135284665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135284663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ee98f82138b60430f97c6863317c3a2f, type: 2}
-  initialSkinName: full_skins
-  fixPrefabOverrideViaMeshFilter: 2
-  initialFlipX: 0
-  initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  physicsPositionInheritanceFactor: {x: 1, y: 1}
-  physicsRotationInheritanceFactor: 1
-  physicsMovementRelativeTo: {fileID: 0}
-  updateTiming: 1
-  unscaledTime: 0
-  _animationName: Idle
-  loop: 1
-  timeScale: 1
---- !u!210 &2135284666
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135284663}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
-  m_Sort3DAs2D: 0
---- !u!23 &2135284667
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135284663}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ed6939b3e846a4917bd2aa0b1fc7ec3c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2135284668
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135284663}
-  m_Mesh: {fileID: 0}
---- !u!4 &2135284669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135284663}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.036, z: 0}
-  m_LocalScale: {x: 1, y: 0.9704, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1108134545}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138017981
 GameObject:
   m_ObjectHideFlags: 0
@@ -37070,7 +33750,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1962514861
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 30669482208713f4ba3f84e6dce39213, type: 3}
@@ -37672,6 +34352,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92debbb905e65481d8f066ef83410062, type: 3}
+--- !u!1001 &6957713392839104414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 545195797358120526, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974221137040808723, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787176746395806029, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_Name
+      value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076643580588800488, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb9c85d9a1e2290478f00c2a818b6311, type: 3}
 --- !u!1001 &7770971394647342975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43832,13 +40577,10 @@ SceneRoots:
   - {fileID: 1809218014}
   - {fileID: 1388310741}
   - {fileID: 1855547581}
-  - {fileID: 559655291}
-  - {fileID: 1108134545}
-  - {fileID: 2077803916}
-  - {fileID: 1073975788}
-  - {fileID: 75753650}
+  - {fileID: 6957713392839104414}
   - {fileID: 453973100}
   - {fileID: 530108663}
   - {fileID: 4099005105372916050}
   - {fileID: 1546484178}
   - {fileID: 443414597}
+  - {fileID: 1071384634}
