@@ -8,6 +8,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     [SerializeField] private PartsManager partsManager;
 
     private HealthSystem healthSystem;
+    private bool isDead;
 
     public GameObject GameObject => gameObject;
 
@@ -25,11 +26,13 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     void OnEnable()
     {
         healthSystem.OnHealthChanged += OnHit;
+        healthSystem.OnDead += OnDead;
     }
 
     void OnDisable()
     {
-        healthSystem.OnHealthChanged += OnHit;
+        healthSystem.OnHealthChanged -= OnHit;
+        healthSystem.OnDead -= OnDead;
     }
 
     public void Damage(int damage)
@@ -39,11 +42,19 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
 
     private void OnHit()
     {
+        if (isDead) return;
         partsManager.PlayAnimationOnce("Hit");
+    }
+
+    private void OnDead()
+    {
+        isDead = true;
+        partsManager.PlayAnimationOnce("Die");
     }
 
     public void Reset()
     {
+        if (isDead) return;
         partsManager.PlayAnimation("Idle");
     }
 
