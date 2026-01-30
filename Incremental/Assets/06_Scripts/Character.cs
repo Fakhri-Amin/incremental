@@ -8,6 +8,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     [SerializeField] private PartsManager partsManager;
     [SerializeField] private Collectable collectablePrefab;
 
+    private CharacterAnimation characterAnimation;
     private HealthSystem healthSystem;
     private Collider2D characterCollider;
     private bool isDead;
@@ -18,6 +19,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     {
         healthSystem = GetComponent<HealthSystem>();
         characterCollider = GetComponent<Collider2D>();
+        characterAnimation = GetComponent<CharacterAnimation>();
     }
 
     void Start()
@@ -56,7 +58,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     {
         if (isDead) return;
         if (healthSystem.IsHealthFull()) return;
-        partsManager.PlayAnimationOnce("Hit");
+        characterAnimation.PlayHitAnimationOnce();
     }
 
     private void OnDead()
@@ -67,7 +69,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     private IEnumerator PlayDeadRoutine()
     {
         isDead = true;
-        partsManager.PlayAnimationOnce("Die");
+        characterAnimation.PlayDieAnimationOnce();
         characterCollider.enabled = false;
         yield return new WaitForSeconds(.5f);
         for (int i = 0; i < 3; i++)
@@ -82,7 +84,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     public void PlayIdle()
     {
         if (isDead) return;
-        partsManager.PlayAnimation("Idle");
+        characterAnimation.PlayRandomAnimation();
     }
 
     [Button]

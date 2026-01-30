@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 2182151208275648691}
   - component: {fileID: 1713093520587001362}
   - component: {fileID: 6014995909278686221}
+  - component: {fileID: 131879359517045740}
   - component: {fileID: 545195797358120526}
   m_Layer: 0
   m_Name: Character
@@ -242,6 +243,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Character
   partsManager: {fileID: 1962137575743710557}
   collectablePrefab: {fileID: 2993277813850001749, guid: 3374987653d9c3d4f85984c4b29631a0, type: 3}
+--- !u!114 &131879359517045740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6787176746395806029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b12f9f9e224e948be9ebdb115f7cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimation
+  partsManager: {fileID: 1962137575743710557}
+  animationNames:
+  - Idle
+  - Idle2
+  - Attack1
+  - Attack2
+  - Attack3
 --- !u!114 &545195797358120526
 MonoBehaviour:
   m_ObjectHideFlags: 0
