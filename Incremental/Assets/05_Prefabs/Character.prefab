@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   partsManager: {fileID: 1962137575743710557}
+  collectablePrefab: {fileID: 2993277813850001749, guid: 3374987653d9c3d4f85984c4b29631a0, type: 3}
 --- !u!114 &545195797358120526
 MonoBehaviour:
   m_ObjectHideFlags: 0

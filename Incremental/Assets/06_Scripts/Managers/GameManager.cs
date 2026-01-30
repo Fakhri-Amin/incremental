@@ -1,15 +1,20 @@
+using System.Collections;
 using Eggtato.Utility;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private float levelTimer = 5;
+    [SerializeField] private int boneCollected = 0;
     [SerializeField] private ResultUI resultUI;
+    [SerializeField] private Transform collectorPoint;
 
     private float currentTimer;
     private bool isGamePlaying;
 
-    public int GetCurrentTimer => (int)currentTimer;
+    public int CurrentTimer => (int)currentTimer;
+    public int BoneCollected => boneCollected;
+    public Transform CollectorPoint => collectorPoint;
 
     void Start()
     {
@@ -24,17 +29,21 @@ public class GameManager : Singleton<GameManager>
         currentTimer -= Time.deltaTime;
         if (currentTimer <= 0)
         {
-            Pause();
+            StartCoroutine(PauseRoutine());
         }
     }
 
-    private void Pause()
+    private IEnumerator PauseRoutine()
     {
         isGamePlaying = false;
-        GameInput.Instance.SwitchActionMap("UI");
+        CharacterSpawner.Instance.ReturlAllObjects();
         resultUI.Show();
         currentTimer = levelTimer;
         Cursor.visible = true;
+        GameInput.Instance.SwitchActionMap("UI");
+
+        yield return null;
+
         Time.timeScale = 0;
     }
 
@@ -45,5 +54,10 @@ public class GameManager : Singleton<GameManager>
         GameInput.Instance.SwitchActionMap("Player");
         Cursor.visible = false;
         isGamePlaying = true;
+    }
+
+    public void AddBone()
+    {
+        boneCollected++;
     }
 }

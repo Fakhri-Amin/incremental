@@ -6,6 +6,7 @@ using UnityEngine;
 public class Character : MonoBehaviour, IAttackable, ICharacter
 {
     [SerializeField] private PartsManager partsManager;
+    [SerializeField] private Collectable collectablePrefab;
 
     private HealthSystem healthSystem;
     private Collider2D characterCollider;
@@ -22,7 +23,6 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     void Start()
     {
         partsManager.Init();
-        StartCoroutine(RandomizeParts());
     }
 
     void OnEnable()
@@ -37,6 +37,16 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
         healthSystem.OnDead -= OnDead;
     }
 
+    public void Reset()
+    {
+        isDead = false;
+        PlayIdle();
+        StopAllCoroutines();
+        StartCoroutine(RandomizeParts());
+        characterCollider.enabled = true;
+        healthSystem.ResetHealth();
+    }
+
     public void Damage(int damage)
     {
         healthSystem.Damage(damage);
@@ -45,17 +55,31 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     private void OnHit()
     {
         if (isDead) return;
+        if (healthSystem.IsHealthFull()) return;
         partsManager.PlayAnimationOnce("Hit");
     }
 
     private void OnDead()
     {
+        StartCoroutine(PlayDeadRoutine());
+    }
+
+    private IEnumerator PlayDeadRoutine()
+    {
         isDead = true;
         partsManager.PlayAnimationOnce("Die");
         characterCollider.enabled = false;
+        yield return new WaitForSeconds(.5f);
+        for (int i = 0; i < 3; i++)
+        {
+            Vector2 offset = new Vector2(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f));
+            Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+            var collectable = Instantiate(collectablePrefab, (Vector2)transform.position + offset, randomRotation);
+            collectable.FlyToCollector();
+        }
     }
 
-    public void Reset()
+    public void PlayIdle()
     {
         if (isDead) return;
         partsManager.PlayAnimation("Idle");
@@ -67,7 +91,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
         yield return null;
         RandomizeFacingDirection();
         partsManager.RandomParts();
-        ColorPresetManager.Instance.SetRandomAllColor(partsManager);
+        // ColorPresetManager.Instance.SetRandomAllColor(partsManager);
     }
 
     public void RandomizeFacingDirection()

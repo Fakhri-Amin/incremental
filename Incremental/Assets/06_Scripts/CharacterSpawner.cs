@@ -1,14 +1,16 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
+using Eggtato.Utility;
 
-public class CharacterSpawner : MonoBehaviour
+public class CharacterSpawner : Singleton<CharacterSpawner>
 {
     [Header("Spawn Area")]
     [SerializeField] private Vector2 areaCenter = Vector2.zero;
     [SerializeField] private Vector2 areaSize = new Vector2(10, 5);
 
     [Header("Spawn Settings")]
-    [SerializeField] private GameObject characterPrefab;
     [SerializeField] private LayerMask blockingLayers;
     [SerializeField] private float checkRadius = 0.5f;
     [SerializeField] private int maxAttempts = 15;
@@ -18,6 +20,7 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private float spawnDuration = 10.0f;  // total time to keep spawning
 
     private bool isSpawning;
+    private List<Character> spawnedCharacters = new();
 
     void Start()
     {
@@ -54,7 +57,11 @@ public class CharacterSpawner : MonoBehaviour
 
             if (!hasCollider)
             {
-                Instantiate(characterPrefab, spawnPos, Quaternion.identity);
+                // Instantiate(characterPrefab, spawnPos, Quaternion.identity);
+                Character newCharacter = CharacterObjectPool.Instance.GetPooledObject();
+                newCharacter.transform.SetPositionAndRotation(spawnPos, Quaternion.identity);
+                newCharacter.Reset();
+                spawnedCharacters.Add(newCharacter);
                 return;
             }
         }
@@ -67,6 +74,15 @@ public class CharacterSpawner : MonoBehaviour
         float x = Random.Range(areaCenter.x - areaSize.x / 2f, areaCenter.x + areaSize.x / 2f);
         float y = Random.Range(areaCenter.y - areaSize.y / 2f, areaCenter.y + areaSize.y / 2f);
         return new Vector2(x, y);
+    }
+
+    public void ReturlAllObjects()
+    {
+        foreach (var item in spawnedCharacters)
+        {
+            CharacterObjectPool.Instance.ReturnToPool(item);
+        }
+        spawnedCharacters.Clear();
     }
 
 #if UNITY_EDITOR

@@ -123,7 +123,7 @@ public class WeaponSwing : MonoBehaviour
     {
         if (collision.TryGetComponent<ICharacter>(out var character))
         {
-            character.Reset();
+            character.PlayIdle();
         }
     }
 
