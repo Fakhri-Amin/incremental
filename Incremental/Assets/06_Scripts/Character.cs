@@ -8,6 +8,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     [SerializeField] private PartsManager partsManager;
 
     private HealthSystem healthSystem;
+    private Collider2D characterCollider;
     private bool isDead;
 
     public GameObject GameObject => gameObject;
@@ -15,6 +16,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     private void Awake()
     {
         healthSystem = GetComponent<HealthSystem>();
+        characterCollider = GetComponent<Collider2D>();
     }
 
     void Start()
@@ -50,6 +52,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
     {
         isDead = true;
         partsManager.PlayAnimationOnce("Die");
+        characterCollider.enabled = false;
     }
 
     public void Reset()

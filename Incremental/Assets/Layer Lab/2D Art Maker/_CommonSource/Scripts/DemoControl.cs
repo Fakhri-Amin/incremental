@@ -73,7 +73,7 @@ namespace LayerLab.ArtMaker
         private void InitializeManagers()
         {
             if (Player.Instance) Player.Instance.PartsManager.Init();
-            CameraControl.Instance.Init();
+            // if (CameraControl.Instance) CameraControl.Instance.Init();
             if (Player.Instance) Player.Instance.Init();
             PanelParts.Init();
             PanelPreset.Init();
