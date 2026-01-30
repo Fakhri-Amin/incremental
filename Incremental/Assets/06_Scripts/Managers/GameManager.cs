@@ -7,14 +7,14 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private float levelTimer = 5;
     [SerializeField] private int boneCollected = 0;
     [SerializeField] private ResultUI resultUI;
-    [SerializeField] private Transform collectorPoint;
+    [SerializeField] private CampFire campFire;
 
     private float currentTimer;
     private bool isGamePlaying;
 
     public int CurrentTimer => (int)currentTimer;
     public int BoneCollected => boneCollected;
-    public Transform CollectorPoint => collectorPoint;
+    public CampFire CampFire => campFire;
 
     void Start()
     {
@@ -56,7 +56,7 @@ public class GameManager : Singleton<GameManager>
         isGamePlaying = true;
     }
 
-    public void AddBone()
+    public void AddCollectable()
     {
         boneCollected++;
     }

@@ -199,7 +199,7 @@ namespace LayerLab.ArtMaker
                 SetRandomColorFromPicker(partsManager, PartsType.Hair_Short);
                 SetRandomColorFromPicker(partsManager, PartsType.Brow);
                 SetRandomColorFromPicker(partsManager, PartsType.Beard);
-                SetRandomColorFromPicker(partsManager, PartsType.Skin);
+                // SetRandomColorFromPicker(partsManager, PartsType.Skin);
             }
             else
             {

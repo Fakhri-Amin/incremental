@@ -83,7 +83,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad46f02cfad1fc47a26bccd90cd521d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
-  coinMoveSpeed: 10
+  minMoveSpeed: 5
+  maxMoveSpeed: 8
+  moveEase: 7
+  collectScaleDuration: 0.2
 --- !u!114 &2355659526255236567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +94,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3040591187838253266}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c47e8f8761fc4f43b0573c29f40fc68, type: 3}
   m_Name: 

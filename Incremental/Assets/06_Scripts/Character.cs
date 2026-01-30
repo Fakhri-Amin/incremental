@@ -91,7 +91,7 @@ public class Character : MonoBehaviour, IAttackable, ICharacter
         yield return null;
         RandomizeFacingDirection();
         partsManager.RandomParts();
-        // ColorPresetManager.Instance.SetRandomAllColor(partsManager);
+        ColorPresetManager.Instance.SetRandomAllColor(partsManager);
     }
 
     public void RandomizeFacingDirection()
