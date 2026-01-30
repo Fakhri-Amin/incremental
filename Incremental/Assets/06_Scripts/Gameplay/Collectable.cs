@@ -29,13 +29,13 @@ public class Collectable : MonoBehaviour
 
         coinMoveSpeed = Random.Range(minMoveSpeed, maxMoveSpeed);
         // Start flight animation
-        FlyToTarget(campFire.transform);
+        FlyToTarget(campFire);
     }
 
-    private void FlyToTarget(Transform target)
+    private void FlyToTarget(CampFire campFire)
     {
         Vector3 startPos = transform.position;
-        Vector3 targetPos = target.position;
+        Vector3 targetPos = campFire.CollectPoint.position;
 
         float distance = Vector3.Distance(startPos, targetPos);
         float duration = distance / coinMoveSpeed;
@@ -54,8 +54,7 @@ public class Collectable : MonoBehaviour
                     .SetEase(Ease.InBack)
                     .OnComplete(() =>
                     {
-                        if (target.TryGetComponent(out CampFire campFire))
-                            campFire.Collect();
+                        campFire.Collect();
 
                         Destroy(gameObject);
                     });
